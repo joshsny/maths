@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{MTMC ES1}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\section{Introduction}
+	These are written solutions to Mixing Times of Markov Chains Example Sheet 1. Solutions are based on those handed out by Samuel Thomas and are not endorsed by the lecturer nor necessarily correct.
+	\section{Questions}
+	\begin{question}[Question 1]
+	Let \(P\) be the transition matrix of a Markov chain with values in \(E\) and let \(\mu\) and \(\nu\) be two
+	probability distributions on \(E .\) Show that
+$$
+\|\mu P-\nu P\|_{\mathrm{TV}} \leq\|\mu-\nu\|_{\mathrm{TV}} \text { . }
+$$
+Deduce that \(d(t)=\max _{x}\left\|P^{t}(x, \cdot)-\pi\right\|_{\mathrm{TV}}\) is decreasing as a function of \(t,\) where \(\pi\) is the invariant
+distribution.
+	\end{question}
+	
+	\begin{proof}
+		Since $P$ is a stochastic matrix, any eigenvalue $\lambda$ of $P$ satisfies $|\lambda| \leq 1$
+	\end{proof}
+	
+	\begin{remark}
+		Equivalently, the number of maximal chains is \(n!\) and the number of them containing a given \(r\)-set is \(r! (n - r)!\), so
+		\[
+		\sum_{r = 0}^n |\mathcal A_r| r! (n - r)! \leq n!
+		\]
+		so this is probability in disguise
+	\end{remark}
+	
+\end{document}

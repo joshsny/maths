@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{Combinatorics}
+\def\nsheet{I}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\subsection*{Introduction}
+	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
+	\subsection*{Questions}
+
+	% Question 1	
+	\begin{question}[Question 1]
+	Let $P = (V, <)$ be a finite poset. Recall that a subset $U \subset V$ is a chain if any two elements of $U$ are comparable, and it is an antichain if no two elements of $U$ are comparable. Show that the maximal size of an antichain in $P$ is equal to the minimal number of chains in $P$ that cover $V$. 
+	\end{question}
+	\begin{proof}
+	Let $N_1 = $ maximum size of antichain, $N_2 = $minimum number of chains that cover $V$.
+	\begin{description}
+	\item \underline{$N_2 \geq N_1$} Given $A_1, A_2, ..., A_{N_2}$ minimal number of chains covering $V$. Any antichain $B$ can contain at most one element from each $A_i$ so $N_1 \geq |B| \geq N_2$.
+	\item \underline{$N_1 \geq N_2$} We prove this by induction on $n$, the size of the partially ordered set. If $P$ is empty the theorem is vacuously true. Thus, assume $P$ has atleast one element and let $a$ be a maximal element in $P$ which exists since $P$ is finite. By induction, assume $\exists k \ : \ P^{'} := P \ {a}$ can be covered by $k$ disjoint chains $C_1,..,C_k$ and there is an antichain $A_0$ of size atleast $k$. Have $A_0 \cap C_i \not = \emptyset$. Let $x_i$ be the maximal element of $C_i$ belonging to an antichain of length atleast $k$.\\
+	\begin{remark}[Claim] Let $A_0 = \{x_1,x_2,...,x_k\}$, then $A$ is an antichain
+	\begin{proof}[Proof of Claim]\renewcommand{\qedsymbol}{}
+	Let $A_i$ be an antichain of size $k$ that contains $x_i$, fix $i \not = j$ arbitrarily. Then $A_i \cup C_j \not = \emptyset$. Suppose $y \in A_i \cup C_j$. Then $y \leq x_j$ since $x_j$ is maximal in $C_j$. Thus $x_i \not \geq x_j$ since $x_i \not \geq y$. Exchanging $i,j$ gives $x_j \not \geq x_i$.
+	\end{proof}
+	\end{remark}
+	Now suppose $a \geq x_i$ for some $1 \leq i \leq k$. Then set
+	\[K = \{a\} \cup \{z \in C_i : z \leq x_i\}\]
+	Then by choice of $x_i$, $P \ K$ does not have an antichain of size $k$ and so by induction $P \setminus K$ can be covered by $k-1$ disjoint chains as $A \ {x_i}$ is an antichain of size $k-1$ in $P \setminus K$. Thus $P$ can be covered by $k$ disjoint chains.\\
+	Else, suppose instead that $a \not \geq x_i$ for all $1 \leq i \leq k$. The $A \cup \{a\}$ is an antichain of size $k+1$ in $P$ and $P$ can be covered by $k+1$ chains $\{a\}, C_1, C_2,...,C_k$.
+	\end{description}
+	\end{proof}
+	
+	\begin{remark}
+	This proof is tedious and a very difficult Question 1. The ideas are, however, important and should be understood.
+	\end{remark}
+	
+	% Question 2
+	\begin{question}[Question 2]
+	Let $(V, <)$ be a finite ranked poset with non-empty level sets $V_0 V_1,....,V_n$. Suppose for $0 < i \leq n$ every $v \in V_i$ dominates exactly $d_i \geq 1$ elements of $V_{i-1}$, for $0 \leq i < n$ every $v \in V_i$ is dominated by exactly $e_i \geq 1$ elements of $V_{i+1}$, and the partial order on $V = \cup_0^n V_i$ is induced by these relations.\\
+	Show that if $U \subset V$ is an antichain then
+	\[\sum_0^n{\frac{|U \cap V_i|}{|V_i|}} \leq 1\]
+	\end{question}
+	\begin{idea}
+	Count number of chains of maximal length in two ways
+	\end{idea}
+	\begin{proof}
+	Must have $|V_i|e_i = |V_{i+1}|d_{i+1}$ for all $0 \leq i < n$. Thus there are $|V_0| e_0 e_1 ... e_{n-1} = d_1 ... d_k |V_k|e_k ... e_{n-1}$ chains of maximal length in $V$.\\
+	For each maximal chain $C$ we have $|C \cap U| \leq 1$ as $U$ is an antichain. Every element in $V_k$ is contained in exactly $(d_k d_{k-1} ... d_1)(e_k ... e_{n-1})$ maximal chains.\\
+	Putting both of these together gives:
+	\[\sum_0^n | U \cap V_k | (d_k ... d_ 1)(e_k ... e_{n-1}) = \# \text{maximal chains} = |V_0|e_0 ... e_{n-1}\]
+	which upon dividing the LHS by the RHS yields the required result.
+	
+	\end{proof}
+	\begin{remark}
+	Counting arguments like these are popular. The counting itself is not difficult, but knowing what to count often is.
+	\end{remark}
+\end{document}
