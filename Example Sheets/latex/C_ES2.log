@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.11.14)  21 NOV 2019 17:14
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.11.14)  18 NOV 2019 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**MTMC_ES1.tex
-(./MTMC_ES1.tex
+**C_ES2.tex
+(./C_ES2.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -492,11 +492,11 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \colbreak@box=\box77
 \mc@col@check@num=\count288
 ))
-\MTMC_ES1@idxfile=\write3
-\openout3 = `MTMC_ES1.idx'.
+\C_ES2@idxfile=\write3
+\openout3 = `C_ES2.idx'.
 
 
-Writing index file MTMC_ES1.idx
+Writing index file C_ES2.idx
 (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -1518,8 +1518,9 @@ File: pgflibraryarrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
 \c@tkz@gr@n=\count373
 \c@tkz@gr@ta=\count374
 \c@tkz@gr@tb=\count375
-) (./MTMC_ES1.aux)
-\openout1 = `MTMC_ES1.aux'.
+)
+No file C_ES2.aux.
+\openout1 = `C_ES2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -1747,7 +1748,6 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/bx/n on inp
 ut line 18.
 
-
 Package unicode-math Warning: Using \overbracket and \underbracket from
 (unicode-math)                `mathtools' package.
 (unicode-math)                 
@@ -1771,16 +1771,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
-
-(./MTMC_ES1.out) (./MTMC_ES1.out)
 \@outlinefile=\write5
-\openout5 = `MTMC_ES1.out'.
+\openout5 = `C_ES2.out'.
 
- (./titlepage.tex [1
 
-]) [1
 
-]
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(./titlepage.tex [1
+
+])
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 26.
@@ -1812,33 +1812,34 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 41.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 49.
- [2
+ line 39.
+ [1]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 
-] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+(./C_ES2.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 41.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 
-(./MTMC_ES1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
-Package rerunfilecheck Info: File `MTMC_ES1.out' has not changed.
-(rerunfilecheck)             Checksum: CED5E3FC282EE720BAD39F8C813F65AB.
 
+Package rerunfilecheck Warning: File `C_ES2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `C_ES2.out':
+(rerunfilecheck)             Before: 
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 52690 strings out of 492916
- 1182514 string characters out of 6133344
- 1470200 words of memory out of 5000000
- 56055 multiletter control sequences out of 15000+600000
- 535398 words of font info for 61 fonts, out of 8000000 for 9000
+ 52669 strings out of 492916
+ 1182074 string characters out of 6133344
+ 1463896 words of memory out of 5000000
+ 56044 multiletter control sequences out of 15000+600000
+ 535382 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 71i,11n,119p,827b,1039s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,11n,119p,824b,1039s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MTMC_ES1.pdf (4 pages).
+Output written on C_ES2.pdf (2 pages).

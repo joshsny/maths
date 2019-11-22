@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{Combinatorics}
+\def\nsheet{II}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\subsection*{Introduction}
+	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
+	\subsection*{Questions}
+
+	% Question 1	
+	\begin{question}[Question 1]
+	(i) Given $n$, determine the maximal integer $k$ such that there is an antichain $\mathcal{A} \subset P(n)$ with $\mathcal{A} \cap [n]^{(r)} \not = \emptyset$ for $r = 1,2,...,k$\\
+	(ii) And what is the maximum for $n = 10$ if we demand that for $r = 1,2,...,k$ the number of $r$-subsets in $\mathcal{A}$ is at least $r$?		
+	\end{question}
+	
+	\begin{proof}
+	\begin{description}
+	\item (i) The answer is $n-2$. First, to show that $n-1$ fails suppose we have an antichain $\mathcal{A}$ with $k = n-1$, WLOG throw away sets in $\mathcal{A}$ to get that $|\mathcal{A} \cap [n]^{(r)}| = 1$ for all $1 \leq r \leq k$. Let $A_i \in \mathcal{A}$ of size $i$.\\
+	Then have $A_1 \cup A_{n-1} = [n]$ by definition of an antichain, 
+	
+	\item (ii) The answer is $6$, consider trying to make it as close to colex as possible
+	\end{description}		
+	\end{proof}
+	\begin{remark}
+	Counting arguments like these are popular. The counting itself is not difficult, but knowing what to count often is.
+	\end{remark}
+\end{document}

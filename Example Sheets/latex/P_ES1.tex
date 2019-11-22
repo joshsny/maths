@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{Percolation}
+\def\nsheet{I}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\subsection*{Introduction}
+	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
+	\subsection*{Questions}
+
+	% Question 1	
+	\begin{question}[Question 1]
+	Let $(x_n : n \geq 1)$ be a real sequence satisfying $x_{m+n} \leq x_m + x_n$ for all $m,n \geq 1$. Show that the limit $\lambda = \lim_{n \to \infty}{\frac{x_n}{n}}$ exists and satisfies $\lambda = \inf_k{\frac{x_n}{n}}$.\\
+	Find reasonable conditions on the sequence $(\alpha_n)$ such that the generalised inequality
+	\[x_{m+n} \leq x_m + x_n + \alpha_m. m,n \geq 1\]
+	implies the existence of the limit $\lambda = \lim_{n \to \infty}{\frac{x_n}{n}}$.
+	\end{question}
+	\begin{proof}
+	Fix an $N$ and for $n \geq N$ express $n = \alpha N + \beta$ and then have
+	\[\frac{x_n}{n} \leq \frac{\alpha x_{N} + x_{\beta}}{n} \leq \frac{\alpha x_N}{\alpha N+\beta}+\frac{x_{\beta}}{n}\]
+	Now what happens when we have $x_{m+n} \leq x_m + x_n + \alpha_n$, we have $\alpha_n = o(n)$ is sufficient but there were also other possible answers. It wasn't expected to prove necessity of any conditions.
+	\end{proof}
+	
+	% Question 2
+	\begin{question}[Question 2]
+	Let $G$ be an infinite connected graph with maximal vertex degree $\Delta$. Show that the critical probabilities for bond and site percolation on $G$ satisfy
+	\[p_c^{\text{bond}} \leq p_c^{\text{site}} \leq 1 - (1 - p_c^{\text{bond}})^{\Delta}\]
+	\end{question}
+	\begin{proof}
+	
+	\end{proof}
+	
+	% Question 3
+	\begin{question}
+	Show that bond percolation on a graph $G$ may be reformulated in terms of site percolation on a graph derived suitably from $G$.
+	\end{question}
+	\begin{proof}
+	\end{proof}
+	
+	% Question 4
+	\begin{question}
+	For each edge of the one-dimensional lattice $\mathbb{L}$ is declared open with probability $p$. For  $k \in \mathbb{Z}$, let $r(k) = \max{ u : k \to  d}$
+	\end{question}
+	
+	% Question 5
+	\begin{question}[Question 5]
+	
+	\end{question}
+	\begin{proof}
+	
+	\end{proof}
+\end{document}

@@ -2,7 +2,8 @@
 
 \def\npart{III}
 
-\def\ntitle{MTMC ES1}
+\def\ntitle{Mixing Times of Markov Chains}
+\def\nsheet{I}
 
 \def\ndate{\today}
 
@@ -20,6 +21,8 @@
 	\section{Introduction}
 	These are written solutions to Mixing Times of Markov Chains Example Sheet 1. Solutions are based on those handed out by Samuel Thomas and are not endorsed by the lecturer nor necessarily correct.
 	\section{Questions}
+	
+	% Question 1
 	\begin{question}[Question 1]
 	Let \(P\) be the transition matrix of a Markov chain with values in \(E\) and let \(\mu\) and \(\nu\) be two
 	probability distributions on \(E .\) Show that
@@ -42,4 +45,24 @@ distribution.
 		so this is probability in disguise
 	\end{remark}
 	
+	% Question 13
+	\begin{question}[Question 13]
+	Let $P$ be a transition matrix of a finite reversible chain with invariant distribution $\pi$. Using the Cauchy-Schwarz inequality or otherwise prove that for all $x,y$ and all $t$
+	\[ \frac{P^{2t}(x, y)}{\pi (y)} \leq \sqrt{\frac{P^{2t}(x,x)}{\pi (x)} \cdot \frac{P^{2t}(y,y)}{\pi (y)}} \ \text{and} \ P^{2t+2}(x,x) \leq P^{2t} (x,x)\]
+	\end{question}
+	\begin{proof}[Solution 1]
+	\begin{align*}
+	\left( \frac{P^{2t}(x, y)}{\pi (y)} \right)^2 &= \sum_{z} \frac{P^t(x,z)P^t(z,y)}{\pi(y)}\\
+	&= \sum_{z}\frac{P^t(x,z)P^t(z,y)}{\pi(z)}\\
+	&\leq \left( \sum_{z} \frac{P^{2t}(x,z)}{\pi(z)} \right) \left( \sum_{z} \frac{P^{2t}(y,z)}{\pi(z)} \right)\\
+	&\leq \left( \frac{P^{2t}(x,x)}{\pi(x)} \right) \left( \frac{P^{2t}(y,y)}{\pi(y)} \right)
+	\end{align*}
+	which upon taking square roots of both sides completes the proof.\\
+	For the second part since $|\lambda_j| \leq 1$ we have that
+	\begin{align*}
+	\frac{P^{2t}(x,x)}{\pi (x)} &= \sum_{1}^{|\Sigma|} f_{j}^2 (x) \lambda_j^{2t}\\
+	&\geq \sum_{1}^{|\Sigma|} f_{j}^2 (x) \lambda_j^{2t+2}\\
+	&= \frac{P^{2t+2}(x,x)}{\pi (x)}
+	\end{align*}
+	\end{proof}
 \end{document}

@@ -1,0 +1,124 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{Mixing Times of Markov Chains}
+\def\nsheet{II}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\subsection*{Introduction}
+	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
+	\subsection*{Questions}
+
+	% Question 1	
+	\begin{question}[Question 1]
+	\end{question}
+	
+	% Question 5
+	\begin{question}[Question 5]
+	Let $X$ be an irreducible, lazy and reversible Markov Chain on a finite state space with transition matrix $P$ and stationary distribution $\pi$.\\
+	\begin{description}
+	\item (i) Show that
+	\[\E_{\pi}[\tau_{\pi}] := \sum_{x,y}\pi (x) \pi (y) \E_{x}[\tau_{y}] = \sum_{i \geq 2}{\frac{1}{1-\lambda_i}}\]
+	where $(\lambda_i)$ are the eigenvalues. (\textit{Hint:} Use question 12(b) from example sheet 1)
+	\item (ii) Show that
+	\[\sum_{t=k}^\infty{(P^t(x,x) - \pi (x))} \leq e^{-\frac{k}{t_{\text{rel}}}} \E_{\pi}[\tau_x]\]
+	\end{description}
+	\end{question}
+	
+	\begin{proof}
+	\begin{description}
+	\item (i) We have, by Theorem 3.1 from lectures, since $P$ is reversible with respect to $\pi$ that:
+	\[\frac{P^t(x,x)}{\pi (x)} = 1 + \sum_{j=2}^n{f_j^2 (x)\lambda_j^2}\]
+	and therefore combining this with 12(b) yields
+	\begin{align*}
+	\E_{\pi}[\tau_{\pi}] &:= \sum_{x,y}\pi (x) \pi (y) \E_{x}[\tau_{y}]\\
+	&=\sum_{y}\pi (y) \E_{\pi}[\tau_y]\\
+	&=\sum_{y}\sum_{t=0}^{\infty} (P^t(y,y)-\pi (y))\\
+	&=\sum_{t=0}^{\infty}\sum_{y} \pi (y)\sum_{j=2}^n {f_j^2 (y) \lambda_j^t }\\
+	&=\sum_{t=0}^{\infty}\sum_{j=2}^n\langle f_j, f_j \rangle \lambda_j^t =\sum_{j=2}^n\sum_{t=0}^{\infty} \lambda_j^t =\sum_{j=2}^n \frac{1}{1-\lambda_j}	
+	\end{align*}
+	
+	\item (ii) We have, again using Theorem 3.1 from lectures:
+	\begin{align*}
+	\sum_{t = k}^{\infty} (P^t(x,x) - \pi (x)) &= \sum_{t = k}^{\infty} \pi (x) \sum_{j=2}^n f_j^2(x) \lambda_j^t\\	
+	\end{align*}
+	
+	\end{description}
+	\end{proof}
+	
+	% Question 6
+	\begin{question}[Question 6]
+	Let $X$ be a reversible Markov chain on a finite state space $E$ with transition matrix $P$ and invariant distribution $\pi$.
+	\begin{description}
+	\item (i) Prove that for all $x, y$
+	\[ \frac{P^{2t}(x,y)}{\pi (y)} \geq \left(1 - \max_{z,w}{||P^t(z, \cdot) - P^t(w, \cdot)||} \right)^2 \]
+	\item (ii) Deduce that
+	\[ P^{2t_{\text{mix}}}(x,y) \geq \frac{1}{4} \pi (y) \]
+	and that there exists a transition matrix $\tilde{P}$ such that
+	\[ P^{2t_{\text{mix}}}(x,y) = \frac{1}{4}\pi (y) + \frac{3}{4}  \tilde{P}(x,y)\]
+	\item (iii) (Hard)
+	\end{description}
+	\end{question}
+	\begin{proof}
+	\begin{description}
+	\item (i)
+	\begin{align*}
+	\frac{P^{2t}(x,x)}{\pi (y)} &= \sum_{z} \frac{P^t(x,z)P^t(z,y)}{\pi (z)} = \sum_{z} \frac{P^t(x,z)P^t(z,y)}{\pi (z)^2} \pi (z)\\
+	&\geq \left( \sum_{z} \sqrt{P^T(x,z)P^t(y,z)} \right)^2\\
+	&\geq \left( \sum_{z} P^T(x,z) \wedge P^t(y,z) \right)^2\\
+	&= (1 - || P^t(x, \cdot) - P^t(y, \cdot ) ||_{\text{TV}})^2\\
+	&\geq (1 - \max_{w,z} || P^t(w, \cdot) - P^t(z, \cdot ) ||_{\text{TV}})^2
+	\end{align*}
+	\item (ii) Let $\bar{d}(t) = \max_{z,w}{||P^t(z, \cdot) - P^t(w, \cdot)||}$ then from lectures we have that
+	\[\bar{d}(t) \leq 2 d(t) \implies \bar{d}(t_{\text{mix}}) \leq 2 d(t_{\text{mix}}) = \frac{1}{2}\]
+	and therefore that
+	\[P^{2t_{\text{mix}}}(x,y) \geq (1-\bar{d}(t_{\text{mix}}))^2 \pi (y) \geq \frac{1}{4} \pi (y)\]
+	From this we can write $P^{2t_{\text{mix}}}(x,y)$ in terms of some $z(x,y)$ as
+	\[ P^{2t_{\text{mix}}}(x,y) = \frac{1}{4} \pi (y) + \frac{3}{4} z(x,y) \]
+	and from the above we can deduce that $z(x,y)$ in non-negative for all $x,y$. Summing over $y$ gives
+	\begin{align*}
+	1 = \sum_{y}{P^{2t_{\text{mix}}}(x,y)} &= \frac{1}{4} \sum_{y}\pi (y) + \frac{3}{4} \sum_{y} z(x,y)\\
+	&=\frac{1}{4} + \frac{3}{4} \sum_{y} z(x,y)\\
+	&\implies \sum_{y} z(x,y) = 1
+	\end{align*}
+	and so $z(x,y) = \tilde{P}(x,y)$ for some transition matrix $\tilde{P}(x,y)$.
+	
+	\end{description}
+	\end{proof}
+	% Question 7
+	\begin{question}[Question 7]
+	Let $X$ be reversible Markov Chain with values in the finite state space $E$, transition matrix $P$ and invariant distribution $\pi$.
+	\begin{description}
+	\item (a) Let $\phi$ be an eigenfunction of $P$ corresponding to eigenvalue $\lambda \neq 1$ and $||\phi||_{2} = 1$. Show that
+	\[ \E_{\pi}\left[ \left(\sum_{s = 0}^{t-1} \phi(X_s)\right)^2\right] \leq \frac{2t}{1-\lambda} \]
+	\item (b) Let $f: E \to R$ be a function with $\E_{\pi}[f] = 0$. Recall $\gamma = 1 - \lambda_2$ is the spectral gap. Show that
+	\[ \E_{\pi}\left[ \left( \sum_{s=0}^{t-1} f(X_s) \right)^2 \right] \]
+	\item (c) Using coupling or otherwise, show that if $r \geq t_{\text{mix}}(\frac{\epsilon}{2})$ and $t \geq 4 t_{rel}Var_{\pi}(f)/(\nu^2\epsilon)$, then for all $x \in E$
+	\[\P_x \left( \left| \frac{1}{t} \sum_{s=0}^{t-1}{f(X_{r+s}) - \E_{\pi}[f])} \right| \geq \nu \right) \leq \epsilon\]
+	\end{description}
+	\end{question}
+	\begin{proof}
+	\begin{description}
+	\item (b) We can write $f$ in terms of eigenfunctions $(f_j)$ as $f = \sum_{j=2}^n{\langle f_j, f \rangle f_j}$ as $\E_{\pi}[f] = 0$. Thus
+	\begin{align*}	
+	\E_{\pi}\left[ \left( \sum_{s=0}^{t-1} f(X_s) \right)^2 \right] &= \E_{\pi}\left[ \left( \sum_{s=0}^{t-1}  \sum_{j=2}^n{\langle f_j, f \rangle f_j (X_s)} \right)^2 \right]\\
+	&= \sum_{j=2}^n \langle f_j, f \rangle ^2 \E_{\pi}\left[ \left( \sum_{s=0}^{t-1} f_j (X_s) \right) ^2 \right]\\
+	&\leq \frac{2t}{1-\lambda_2} \sum_{j=2}^n \langle f_j, f \rangle ^2 = \frac{2t}{1-\lambda_2}\E_{\pi}[f^2]
+	\end{align*}
+	\end{description}
+	\end{proof}
+	
+\end{document}
