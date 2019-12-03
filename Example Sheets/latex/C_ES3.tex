@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{Combinatorics}
+\def\nsheet{III}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\subsection*{Introduction}
+	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.\\
+	
+	Where I thought appropriate, some questions contain minor edits from the original questions seen on the example sheet.
+	\subsection*{Questions}
+
+	% Question 1	
+	
+	% Question 2
+	\begin{question}[Question 2]
+	Construct a 2-distance set of cardinality $\frac{n(n+1)}{2}$ in $\mathbb{R}^n$
+	\end{question}
+	\begin{answer}
+	Consider all the points in $\mathbb{R}^{n+1}$ of distance 2 from the origin. i.e
+	\[ \{(1,1,0,0,...,0), (1,0,1,0,...,0), (1,0,0,...0,1),(0,1,1,0,...,0)...\} \]
+	Then any two distinct points either differ in $2$ or $4$ places. Whence we are done.
+	\end{answer}
+	\begin{remark}
+	This also works for $k$ distance for any $k \leq n+1$.
+	\end{remark}
+	
+	% Question 3
+	\begin{question}[Question 3]
+	Show that the maximal number of points in a $2$-distance set in $\mathbb{R}^{2}$ is 5. At most how many points are in a $2$-distance set in $\mathbb{R}^{3}$
+	\end{question}
+	\begin{idea}
+	Mess around with points. How can I link between dimensions?
+	\end{idea}
+\end{document}

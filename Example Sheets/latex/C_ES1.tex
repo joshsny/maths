@@ -17,14 +17,14 @@
 
 \begin{document}
 	\input{titlepage}
-	
+
 	\subsection*{Introduction}
 	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
 	\subsection*{Questions}
 
-	% Question 1	
+	% Question 1
 	\begin{question}[Question 1]
-	Let $P = (V, <)$ be a finite poset. Recall that a subset $U \subset V$ is a chain if any two elements of $U$ are comparable, and it is an antichain if no two elements of $U$ are comparable. Show that the maximal size of an antichain in $P$ is equal to the minimal number of chains in $P$ that cover $V$. 
+	Let $P = (V, <)$ be a finite poset. Recall that a subset $U \subset V$ is a chain if any two elements of $U$ are comparable, and it is an antichain if no two elements of $U$ are comparable. Show that the maximal size of an antichain in $P$ is equal to the minimal number of chains in $P$ that cover $V$.
 	\end{question}
 	\begin{proof}
 	Let $N_1 = $ maximum size of antichain, $N_2 = $minimum number of chains that cover $V$.
@@ -42,11 +42,11 @@
 	Else, suppose instead that $a \not \geq x_i$ for all $1 \leq i \leq k$. The $A \cup \{a\}$ is an antichain of size $k+1$ in $P$ and $P$ can be covered by $k+1$ chains $\{a\}, C_1, C_2,...,C_k$.
 	\end{description}
 	\end{proof}
-	
+
 	\begin{remark}
 	This proof is tedious and a very difficult Question 1. The ideas are, however, important and should be understood.
 	\end{remark}
-	
+
 	% Question 2
 	\begin{question}[Question 2]
 	Let $(V, <)$ be a finite ranked poset with non-empty level sets $V_0 V_1,....,V_n$. Suppose for $0 < i \leq n$ every $v \in V_i$ dominates exactly $d_i \geq 1$ elements of $V_{i-1}$, for $0 \leq i < n$ every $v \in V_i$ is dominated by exactly $e_i \geq 1$ elements of $V_{i+1}$, and the partial order on $V = \cup_0^n V_i$ is induced by these relations.\\
@@ -62,7 +62,7 @@
 	Putting both of these together gives:
 	\[\sum_0^n | U \cap V_k | (d_k ... d_ 1)(e_k ... e_{n-1}) = \# \text{maximal chains} = |V_0|e_0 ... e_{n-1}\]
 	which upon dividing the LHS by the RHS yields the required result.
-	
+
 	\end{proof}
 	\begin{remark}
 	Counting arguments like these are popular. The counting itself is not difficult, but knowing what to count often is.

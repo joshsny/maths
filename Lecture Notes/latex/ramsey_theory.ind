@@ -1,0 +1,91 @@
+\begin{theindex}
+
+  \item $(m, p, c)$-set, \hyperpage{35}
+  \item $C_n$, \hyperpage{11}
+  \item $P_n$, \hyperpage{10}
+  \item $R(G, H)$, \hyperpage{17}
+  \item $R(K_n)$, \hyperpage{11}
+  \item $R(K_n, K_m)$, \hyperpage{13}
+  \item $R(n)$, \hyperpage{11}
+  \item $R(n, m)$, \hyperpage{13}
+  \item $V_n$, \hyperpage{11}
+  \item $X^{(r)}$, \hyperpage{5}
+  \item $[n]$, \hyperpage{5}
+  \item $\N$, \hyperpage{5}
+  \item $k$-colouring, \hyperpage{5}
+  \item $r$-sets, \hyperpage{5}
+
+  \indexspace
+
+  \item active coordinates, \hyperpage{21}
+
+  \indexspace
+
+  \item canonical Ramsey theorem, \hyperpage{8}
+  \item colour focused lines, \hyperpage{22}
+  \item colour focused progression, \hyperpage{19}
+  \item colouring, \hyperpage{5}
+  \item columns property, \hyperpage{29}
+  \item combinatorial line, \hyperpage{21}
+  \item complete graph, \hyperpage{11}
+  \item consistency theorem, \hyperpage{38}
+
+  \indexspace
+
+  \item density, \hyperpage{24}
+
+  \indexspace
+
+  \item finite Ramsey theorem, \hyperpage{11}
+  \item Finite sum theorem, \hyperpage{36}
+  \item focus progression
+    \subitem colour, \hyperpage{19}
+  \item focused lines, \hyperpage{22}
+    \subitem colour, \hyperpage{22}
+  \item focused progression, \hyperpage{19}
+
+  \indexspace
+
+  \item graph, \hyperpage{5}
+
+  \indexspace
+
+  \item Hales--Jewett theorem, \hyperpage{22}
+  \item higher dimensional canonical Ramsey theorem, \hyperpage{10}
+  \item homothetic copy, \hyperpage{21}
+
+  \indexspace
+
+  \item monochromatic set, \hyperpage{5}
+
+  \indexspace
+
+  \item off-diagonal Ramsey number, \hyperpage{13}
+
+  \indexspace
+
+  \item partition regular, \hyperpage{28}
+  \item path graph, \hyperpage{10}
+  \item product argument, \hyperpage{20}
+
+  \indexspace
+
+  \item Rado's theorem, \hyperpage{30}, \hyperpage{37}
+  \item Ramsey number, \hyperpage{11}
+    \subitem off-diagonal, \hyperpage{13}
+  \item Ramsey theorem
+    \subitem canonical, \hyperpage{8}
+    \subitem higher dimensional, canonical, \hyperpage{10}
+  \item Ramsey's theorem, \hyperpage{6}
+    \subitem for $r$ sets, \hyperpage{7}
+
+  \indexspace
+
+  \item Schur's theorem, \hyperpage{28}
+  \item Szemer\'edi theorem, \hyperpage{24}
+
+  \indexspace
+
+  \item van der Waerden theorem, \hyperpage{18}
+
+\end{theindex}

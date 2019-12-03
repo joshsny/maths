@@ -1,0 +1,318 @@
+\ifx \nauthor\undefined
+  \def\nauthor{Joshua Snyder}
+\else
+\fi
+
+\ifx \ntitle\undefined
+  \def\ntitle{Template}
+\else
+\fi
+
+\ifx \nauthoremail\undefined
+  \def\nauthoremail{jjds2@cam.ac.uk}
+\else
+\fi
+
+\ifx \ndate\undefined
+  \def\ndate{\today}
+\else
+\fi
+
+\title{\ntitle}
+\author{\nauthor}
+\date{\ndate}
+
+%\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{stmaryrd}%symbols used so far: \mapsfrom
+\usepackage{empheq}
+\usepackage{amssymb}
+\let\mathbbalt\mathbb
+\let\pitchforkold\pitchfork
+\usepackage{unicode-math}
+\let\mathbb\mathbbalt%reset to original \mathbb
+\let\pitchfork\pitchforkold
+\usepackage{float}
+
+\usepackage{imakeidx}
+\makeindex[intoc]
+
+%to address the problem that Latin modern doesn't have unicode support for setminus
+%https://tex.stackexchange.com/a/55205/26707
+\AtBeginDocument{\renewcommand*{\setminus}{\mathbin{\backslash}}}
+\AtBeginDocument{\renewcommand*{\models}{\vDash}}%for \vDash is same size as \vdash but orginal \models is larger
+\AtBeginDocument{\let\Re\relax}
+\AtBeginDocument{\let\Im\relax}
+\AtBeginDocument{\DeclareMathOperator{\Re}{Re}}
+\AtBeginDocument{\DeclareMathOperator{\Im}{Im}}
+\AtBeginDocument{\let\div\relax}
+\AtBeginDocument{\DeclareMathOperator{\div}{div}}
+
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+\usepackage{pgfplots}
+%some preset styles
+\pgfplotsset{compat=1.15}
+\pgfplotsset{centre/.append style={axis x line=middle, axis y line=middle, xlabel={$x$}, ylabel={$y$}, axis equal}}
+\usepackage{tikz-cd}
+\usepackage{graphicx}
+\usepackage{newunicodechar}
+
+\usepackage{fancyhdr}
+
+\fancypagestyle{mypagestyle}{
+    \fancyhf{}
+    \lhead{\emph{\nouppercase{\leftmark}}}
+    \rhead{}
+    \cfoot{\thepage}
+}
+\pagestyle{mypagestyle}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage} % clear page after each section
+\usepackage[perpage]{footmisc}
+\usepackage{blindtext}
+
+%\reallywidehat
+%https://tex.stackexchange.com/a/101136/26707
+\usepackage{scalerel,stackengine}
+\stackMath
+\newcommand\reallywidehat[1]{%
+\savestack{\tmpbox}{\stretchto{%
+  \scaleto{%
+    \scalerel*[\widthof{\ensuremath{#1}}]{\kern-.6pt\bigwedge\kern-.6pt}%
+    {\rule[-\textheight/2]{1ex}{\textheight}}%WIDTH-LIMITED BIG WEDGE
+  }{\textheight}% 
+}{0.5ex}}%
+\stackon[1pt]{#1}{\tmpbox}%
+}
+
+%\usepackage{braket}
+\usepackage{thmtools}%restate theorem
+\usepackage{hyperref}
+
+% https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+\hypersetup{
+    %bookmarks=true,
+    unicode=true,
+    pdftitle={\ntitle},
+    pdfauthor={\nauthor},
+    pdfsubject={Mathematics},
+    pdfcreator={\nauthor},
+    pdfproducer={\nauthor},
+    pdfkeywords={math maths \ntitle},
+    colorlinks=true,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\usepackage{cleveref}
+
+
+
+% TODO: mdframed often gives bad breaks that cause empty lines. Would like to switch to tcolorbox.
+% The current workaround is to set innerbottommargin=0pt.
+
+%\usepackage[theorems]{tcolorbox}
+
+
+
+
+
+\usepackage[framemethod=tikz]{mdframed}
+\mdfdefinestyle{leftbar}{
+  %nobreak=true, %dirty hack
+  linewidth=1.5pt,
+  linecolor=gray,
+  hidealllines=true,
+  leftline=true,
+  leftmargin=0pt,
+  innerleftmargin=5pt,
+  innerrightmargin=10pt,
+  innertopmargin=-5pt,
+  % innerbottommargin=5pt, % original
+  innerbottommargin=0pt, % temporary hack 
+}
+%\newmdtheoremenv[style=leftbar]{theorem}{Theorem}[section]
+%\newmdtheoremenv[style=leftbar]{proposition}[theorem]{proposition}
+%\newmdtheoremenv[style=leftbar]{lemma}[theorem]{Lemma}
+%\newmdtheoremenv[style=leftbar]{corollary}[theorem]{corollary}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem*{axiom*}{Axiom}
+
+\surroundwithmdframed[style=leftbar]{theorem}
+\surroundwithmdframed[style=leftbar]{proposition}
+\surroundwithmdframed[style=leftbar]{lemma}
+\surroundwithmdframed[style=leftbar]{corollary}
+\surroundwithmdframed[style=leftbar]{axiom}
+\surroundwithmdframed[style=leftbar]{axiom*}
+\surroundwithmdframed[style=leftbar]{question}
+
+\theoremstyle{definition}
+
+\newtheorem*{definition}{Definition}
+\surroundwithmdframed[style=leftbar]{definition}
+
+\newtheorem*{slogan}{Slogan}
+\newtheorem*{eg}{Example}
+\newtheorem*{ex}{Exercise}
+\newtheorem*{remark}{Remark}
+\newtheorem*{notation}{Notation}
+\newtheorem*{convention}{Convention}
+\newtheorem*{assumption}{Assumption}
+\newtheorem*{question}{Question}
+\newtheorem*{answer}{Answer}
+\newtheorem*{note}{Note}
+\newtheorem*{idea}{Idea}
+\newtheorem*{application}{Application}
+
+\renewcommand*{\proofname}{Solution}
+
+%operator macros
+
+%basic
+\DeclareMathOperator{\lcm}{lcm}
+
+%matrix
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\adj}{adj}
+
+%algebra
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\coker}{coker}
+\DeclarePairedDelimiter{\generation}{\langle}{\rangle}
+
+%groups
+\DeclareMathOperator{\sym}{Sym}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\inn}{Inn}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\PGL}{PGL}
+\DeclareMathOperator{\PSL}{PSL}
+\DeclareMathOperator{\SU}{SU}
+\DeclareMathOperator{\UU}{U}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\OO}{O}
+\DeclareMathOperator{\PSU}{PSU}
+\DeclareMathOperator{\Sp}{Sp}
+
+
+%hyperbolic
+\DeclareMathOperator{\sech}{sech}
+
+%field, galois heory
+\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\gal}{Gal}
+\DeclareMathOperator{\emb}{Emb}
+
+
+
+%ceiling and floor
+%https://tex.stackexchange.com/a/118217/26707
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+
+\DeclarePairedDelimiter{\innerproduct}{\langle}{\rangle}
+
+%\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{#1}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+
+
+%Dirac notation
+%TODO: rewrite for variable number of arguments
+\DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+\DeclarePairedDelimiterX{\braketthree}[3]{\langle}{\rangle}{#1 \delimsize\vert #2 \delimsize\vert #3}
+
+\DeclarePairedDelimiter{\bra}{\langle}{\rvert}
+\DeclarePairedDelimiter{\ket}{\lvert}{\rangle}
+
+
+
+
+%macros
+
+%general
+
+%divide, not divide
+\newcommand*{\divides}{\mid}
+\newcommand*{\ndivides}{\nmid}
+%vector, i.e. mathbf
+%https://tex.stackexchange.com/a/45746/26707
+\newcommand*{\V}[1]{{\ensuremath{\symbf{#1}}}}
+%closure
+\newcommand*{\cl}[1]{\overline{#1}}
+%conjugate
+\newcommand*{\conj}[1]{\overline{#1}}
+%set complement
+\newcommand*{\stcomp}[1]{\overline{#1}}
+\newcommand*{\compose}{\circ}
+\newcommand*{\nto}{\nrightarrow}
+\newcommand*{\p}{\partial}
+%embed
+\newcommand*{\embed}{\hookrightarrow}
+%surjection
+\newcommand*{\surj}{\twoheadrightarrow}
+%power set
+\newcommand*{\powerset}{\mathcal{P}}
+
+%matrix
+\newcommand*{\matrixring}{\mathcal{M}}
+
+%groups
+\newcommand*{\normal}{\trianglelefteq}
+%rings
+\newcommand*{\ideal}{\trianglelefteq}
+
+%fields
+\renewcommand*{\C}{{\mathbb{C}}}
+\newcommand*{\R}{{\mathbb{R}}}
+\newcommand*{\Q}{{\mathbb{Q}}}
+\newcommand*{\Z}{{\mathbb{Z}}}
+\newcommand*{\N}{{\mathbb{N}}}
+\newcommand*{\F}{{\mathbb{F}}}
+%not really but I think this belongs here
+\newcommand*{\A}{{\mathbb{A}}}
+
+%asymptotic
+\newcommand*{\bigO}{O}
+\newcommand*{\smallo}{o}
+
+%probability
+\newcommand*{\prob}{\mathbb{P}}
+\newcommand*{\E}{\mathbb{E}}
+
+%vector calculus
+\newcommand*{\gradient}{\V \nabla}
+\newcommand*{\divergence}{\gradient \cdot}
+\newcommand*{\curl}{\gradient \cdot}
+
+%logic
+\newcommand*{\yields}{\vdash}
+\newcommand*{\nyields}{\nvdash}
+
+%differential geometry
+\renewcommand*{\H}{\mathbb{H}}
+\newcommand*{\transversal}{\pitchfork}
+\renewcommand{\d}{\mathrm{d}} % exterior derivative
+
+%number theory
+\newcommand*{\legendre}[2]{\genfrac{(}{)}{}{}{#1}{#2}}%Legendre symbol
+
+%algebraic geometry
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Proj}{Proj}

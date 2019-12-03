@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {0}Introduction}{3}{section.0}% 
+\contentsline {section}{\numberline {1}Graph Ramsey theory}{5}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Infinite graphs}{5}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Finite graphs}{10}{subsection.1.2}% 
+\contentsline {section}{\numberline {2}Ramsey theory on the integers}{18}{section.2}% 
+\contentsline {section}{\numberline {3}Partition Regularity}{28}{section.3}% 
+\contentsline {section}{\numberline {4}Ultrafilters and Hindman's Theorem}{39}{section.4}% 
+\contentsline {section}{Index}{40}{section*.5}% 
