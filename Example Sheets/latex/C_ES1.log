@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  12 DEC 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  12 DEC 2019 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1352,22 +1352,22 @@ File: pgflibraryarrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
 ) (./C_ES1.aux)
 \openout1 = `C_ES1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1403,7 +1403,7 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.15).
 
 \AtBeginShipoutBox=\box121
-Package hyperref Info: Link coloring ON on input line 18.
+Package hyperref Info: Link coloring ON on input line 19.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1412,9 +1412,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count365
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./C_ES1.out) (./C_ES1.out)
 \@outlinefile=\write5
@@ -1425,91 +1425,91 @@ LaTeX Info: Redefining \nameref on input line 18.
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 26.
+(mdframed)              on input line 27.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 26.
-LaTeX Font Info:    Try loading font information for U+stmry on input line 27.
+ut line 27.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 28.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 34.
+ line 35.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 	\end{remark}
-                   [1]
+l.52 \end{remark}
+                  [1]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 54.
+(mdframed)              on input line 55.
 Package hyperref Info: bookmark level for unknown idea defaults to 0 on input l
-ine 60.
+ine 61.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 75.
+(mdframed)              on input line 76.
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 79.
+(amsmath)                 on input line 80.
 
 [2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 130.
+(mdframed)              on input line 131.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 154.
+(mdframed)              on input line 156.
 
 
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 155.
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 157.
 
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 155.
+LaTeX Warning: Command \^ invalid in math mode on input line 157.
 
-./C_ES1.tex:155: Please use \mathaccent for accents in math mode.
+./C_ES1.tex:157: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.155 ...q r \leq \frac{n}{2}$, let $A \subset Xˆ
+l.157 ...q r \leq \frac{n}{2}$, let $A \subset Xˆ
                                                   {(r)}$ be an intersecting
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./C_ES1.tex:155: Missing { inserted.
+./C_ES1.tex:157: Missing { inserted.
 <to be read again> 
                    \egroup 
-l.155 ...q r \leq \frac{n}{2}$, let $A \subset Xˆ
+l.157 ...q r \leq \frac{n}{2}$, let $A \subset Xˆ
                                                   {(r)}$ be an intersecting
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./C_ES1.tex:155: You can't use `\spacefactor' in math mode.
+./C_ES1.tex:157: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.155 ...q r \leq \frac{n}{2}$, let $A \subset Xˆ
+l.157 ...q r \leq \frac{n}{2}$, let $A \subset Xˆ
                                                   {(r)}$ be an intersecting
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./C_ES1.tex:155: Missing } inserted.
+./C_ES1.tex:157: Missing } inserted.
 <inserted text> 
                 }
-l.155 ...eq \frac{n}{2}$, let $A \subset Xˆ{(r)}$
+l.157 ...eq \frac{n}{2}$, let $A \subset Xˆ{(r)}$
                                                    be an intersecting
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1519,44 +1519,44 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no � in font cmex10!
 
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 160.
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 162.
 
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 160.
+LaTeX Warning: Command \^ invalid in math mode on input line 162.
 
-./C_ES1.tex:160: Please use \mathaccent for accents in math mode.
+./C_ES1.tex:162: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.160 ...)$? What about in the case $A \subset Xˆ
+l.162 ...)$? What about in the case $A \subset Xˆ
                                                   {(\leq r)}$
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./C_ES1.tex:160: Missing { inserted.
+./C_ES1.tex:162: Missing { inserted.
 <to be read again> 
                    \egroup 
-l.160 ...)$? What about in the case $A \subset Xˆ
+l.162 ...)$? What about in the case $A \subset Xˆ
                                                   {(\leq r)}$
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./C_ES1.tex:160: You can't use `\spacefactor' in math mode.
+./C_ES1.tex:162: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.160 ...)$? What about in the case $A \subset Xˆ
+l.162 ...)$? What about in the case $A \subset Xˆ
                                                   {(\leq r)}$
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./C_ES1.tex:160: Missing } inserted.
+./C_ES1.tex:162: Missing } inserted.
 <inserted text> 
                 }
-l.160 ...out in the case $A \subset Xˆ{(\leq r)}$
+l.162 ...out in the case $A \subset Xˆ{(\leq r)}$
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1565,57 +1565,53 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 Missing character: There is no � in font cmex10!
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 161.
-
+Package mdframed Info: Not enough space on this page on input line 163.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Package mdframed Info: Not enough space on this page on input line 163.
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
  []
 
 
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 181.
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 183.
 
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 181.
+LaTeX Warning: Command \^ invalid in math mode on input line 183.
 
-./C_ES1.tex:181: Please use \mathaccent for accents in math mode.
+./C_ES1.tex:183: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.181 ...{A} \subset \P(X)$ an upper bound is $2ˆ
+l.183 ...{A} \subset \P(X)$ an upper bound is $2ˆ
                                                   {n-1}$ since a set and
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./C_ES1.tex:181: Missing { inserted.
+./C_ES1.tex:183: Missing { inserted.
 <to be read again> 
                    \egroup 
-l.181 ...{A} \subset \P(X)$ an upper bound is $2ˆ
+l.183 ...{A} \subset \P(X)$ an upper bound is $2ˆ
                                                   {n-1}$ since a set and
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./C_ES1.tex:181: You can't use `\spacefactor' in math mode.
+./C_ES1.tex:183: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.181 ...{A} \subset \P(X)$ an upper bound is $2ˆ
+l.183 ...{A} \subset \P(X)$ an upper bound is $2ˆ
                                                   {n-1}$ since a set and
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./C_ES1.tex:181: Missing } inserted.
+./C_ES1.tex:183: Missing } inserted.
 <inserted text> 
                 }
-l.181 ...ubset \P(X)$ an upper bound is $2ˆ{n-1}$
+l.183 ...ubset \P(X)$ an upper bound is $2ˆ{n-1}$
                                                    since a set and
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1625,49 +1621,49 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no � in font cmex10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--185
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
 
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 186.
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 188.
 
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 186.
+LaTeX Warning: Command \^ invalid in math mode on input line 188.
 
-./C_ES1.tex:186: Please use \mathaccent for accents in math mode.
+./C_ES1.tex:188: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.186   For $A \subset Xˆ
+l.188   For $A \subset Xˆ
                           {(\leq r)}$, applying $|A \cap Xˆ{(s)}| \leq \bin...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./C_ES1.tex:186: Missing { inserted.
+./C_ES1.tex:188: Missing { inserted.
 <to be read again> 
                    \egroup 
-l.186   For $A \subset Xˆ
+l.188   For $A \subset Xˆ
                           {(\leq r)}$, applying $|A \cap Xˆ{(s)}| \leq \bin...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./C_ES1.tex:186: You can't use `\spacefactor' in math mode.
+./C_ES1.tex:188: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.186   For $A \subset Xˆ
+l.188   For $A \subset Xˆ
                           {(\leq r)}$, applying $|A \cap Xˆ{(s)}| \leq \bin...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./C_ES1.tex:186: Missing } inserted.
+./C_ES1.tex:188: Missing } inserted.
 <inserted text> 
                 }
-l.186   For $A \subset Xˆ{(\leq r)}$
+l.188   For $A \subset Xˆ{(\leq r)}$
                                      , applying $|A \cap Xˆ{(s)}| \leq \bin...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1677,44 +1673,44 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no � in font cmex10!
 
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 186.
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 188.
 
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 186.
+LaTeX Warning: Command \^ invalid in math mode on input line 188.
 
-./C_ES1.tex:186: Please use \mathaccent for accents in math mode.
+./C_ES1.tex:188: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.186 ...set Xˆ{(\leq r)}$, applying $|A \cap Xˆ
+l.188 ...set Xˆ{(\leq r)}$, applying $|A \cap Xˆ
                                                   {(s)}| \leq \binom{n-1}{s-...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./C_ES1.tex:186: Missing { inserted.
+./C_ES1.tex:188: Missing { inserted.
 <to be read again> 
                    \egroup 
-l.186 ...set Xˆ{(\leq r)}$, applying $|A \cap Xˆ
+l.188 ...set Xˆ{(\leq r)}$, applying $|A \cap Xˆ
                                                   {(s)}| \leq \binom{n-1}{s-...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./C_ES1.tex:186: You can't use `\spacefactor' in math mode.
+./C_ES1.tex:188: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.186 ...set Xˆ{(\leq r)}$, applying $|A \cap Xˆ
+l.188 ...set Xˆ{(\leq r)}$, applying $|A \cap Xˆ
                                                   {(s)}| \leq \binom{n-1}{s-...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./C_ES1.tex:186: Missing } inserted.
+./C_ES1.tex:188: Missing } inserted.
 <inserted text> 
                 }
-l.186 ...$|A \cap Xˆ{(s)}| \leq \binom{n-1}{s-1}$
+l.188 ...$|A \cap Xˆ{(s)}| \leq \binom{n-1}{s-1}$
                                                    for
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1724,45 +1720,45 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no � in font cmex10!
 
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 187.
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 189.
 
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 187.
+LaTeX Warning: Command \^ invalid in math mode on input line 189.
 
-./C_ES1.tex:187: Please use \mathaccent for accents in math mode.
+./C_ES1.tex:189: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.187 ... r$ gives an upper bound of $\sum_{s=1}ˆ
+l.189 ... r$ gives an upper bound of $\sum_{s=1}ˆ
                                                   {r}
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./C_ES1.tex:187: Missing { inserted.
+./C_ES1.tex:189: Missing { inserted.
 <to be read again> 
                    \egroup 
-l.187 ... r$ gives an upper bound of $\sum_{s=1}ˆ
+l.189 ... r$ gives an upper bound of $\sum_{s=1}ˆ
                                                   {r}
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./C_ES1.tex:187: You can't use `\spacefactor' in math mode.
+./C_ES1.tex:189: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.187 ... r$ gives an upper bound of $\sum_{s=1}ˆ
+l.189 ... r$ gives an upper bound of $\sum_{s=1}ˆ
                                                   {r}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./C_ES1.tex:188: Missing } inserted.
+./C_ES1.tex:190: Missing } inserted.
 <inserted text> 
                 }
-l.188   \binom{n-1}{s-1}$
-                         . This can be achieved with $\mathcal{A} = \{ A : |...
+l.190   \binom{n-1}{s-1}$
+                         . This can be achieved with $\A = \{ A : |A| \leq r
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1770,23 +1766,581 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 Missing character: There is no � in font cmex10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 195.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 195.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 203.
+
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 204.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 204.
+
+./C_ES1.tex:204: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.204   Let $\A \subset Xˆ
+                           {(r)}$. Prove that for all $1 \leq i,j \leq n$, $...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:204: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.204   Let $\A \subset Xˆ
+                           {(r)}$. Prove that for all $1 \leq i,j \leq n$, $...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:204: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.204   Let $\A \subset Xˆ
+                           {(r)}$. Prove that for all $1 \leq i,j \leq n$, $...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:204: Missing } inserted.
+<inserted text> 
+                }
+l.204   Let $\A \subset Xˆ{(r)}$
+                                 . Prove that for all $1 \leq i,j \leq n$, $...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 214.
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 215.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 215.
+
+./C_ES1.tex:215: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.215 ...2 \leq 2k < n$, and let $\A \subset [n]ˆ
+                                                  {(k)} \cup [n]ˆ(n-k)$ be a
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:215: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.215 ...2 \leq 2k < n$, and let $\A \subset [n]ˆ
+                                                  {(k)} \cup [n]ˆ(n-k)$ be a
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:215: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.215 ...2 \leq 2k < n$, and let $\A \subset [n]ˆ
+                                                  {(k)} \cup [n]ˆ(n-k)$ be a
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 215.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 215.
+
+./C_ES1.tex:215: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.215 ...and let $\A \subset [n]ˆ{(k)} \cup [n]ˆ
+                                                  (n-k)$ be a
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:215: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.215 ...and let $\A \subset [n]ˆ{(k)} \cup [n]ˆ
+                                                  (n-k)$ be a
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:215: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.215 ...and let $\A \subset [n]ˆ{(k)} \cup [n]ˆ
+                                                  (n-k)$ be a
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:215: Missing } inserted.
+<inserted text> 
+                }
+l.215 ...t $\A \subset [n]ˆ{(k)} \cup [n]ˆ(n-k)$
+                                                   be a
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./C_ES1.tex:215: Missing } inserted.
+<inserted text> 
+                }
+l.215 ...t $\A \subset [n]ˆ{(k)} \cup [n]ˆ(n-k)$
+                                                   be a
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 216.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 216.
+
+./C_ES1.tex:216: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.216   Sperner system. Set $\A_i = \A \cap [n]ˆ
+                                                 (i)$. At most how large is
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:216: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.216   Sperner system. Set $\A_i = \A \cap [n]ˆ
+                                                 (i)$. At most how large is
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:216: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.216   Sperner system. Set $\A_i = \A \cap [n]ˆ
+                                                 (i)$. At most how large is
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:216: Missing } inserted.
+<inserted text> 
+                }
+l.216 ...ner system. Set $\A_i = \A \cap [n]ˆ(i)$
+                                                  . At most how large is
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 226.
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 238.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 250.
+
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 251.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 251.
+
+./C_ES1.tex:251: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.251   What is the $100ˆ
+                          {\text{th}}$ element of $\mathbb{N}ˆ{(5)}$ in col...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:251: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.251   What is the $100ˆ
+                          {\text{th}}$ element of $\mathbb{N}ˆ{(5)}$ in col...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:251: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.251   What is the $100ˆ
+                          {\text{th}}$ element of $\mathbb{N}ˆ{(5)}$ in col...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:251: Missing } inserted.
+<inserted text> 
+                }
+l.251   What is the $100ˆ{\text{th}}$
+                                       element of $\mathbb{N}ˆ{(5)}$ in col...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 251.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 251.
+
+./C_ES1.tex:251: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.251 ...00ˆ{\text{th}}$ element of $\mathbb{N}ˆ
+                                                  {(5)}$ in colex order?\\
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:251: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.251 ...00ˆ{\text{th}}$ element of $\mathbb{N}ˆ
+                                                  {(5)}$ in colex order?\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:251: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.251 ...00ˆ{\text{th}}$ element of $\mathbb{N}ˆ
+                                                  {(5)}$ in colex order?\\
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:251: Missing } inserted.
+<inserted text> 
+                }
+l.251 ...text{th}}$ element of $\mathbb{N}ˆ{(5)}$
+                                                   in colex order?\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 253.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 253.
+
+./C_ES1.tex:253: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.253   What about the $100ˆ
+                             {\text{th}}$ element of the cube $Q_{10}$ in the
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:253: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.253   What about the $100ˆ
+                             {\text{th}}$ element of the cube $Q_{10}$ in the
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:253: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.253   What about the $100ˆ
+                             {\text{th}}$ element of the cube $Q_{10}$ in the
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:253: Missing } inserted.
+<inserted text> 
+                }
+l.253   What about the $100ˆ{\text{th}}$
+                                          element of the cube $Q_{10}$ in the
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 263.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 263.
+
+./C_ES1.tex:263: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.263 ...5$, $a_2 = 4$, $a_1 = 2$. Thus the $100ˆ
+                                                  {\text{th}}$ element
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:263: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.263 ...5$, $a_2 = 4$, $a_1 = 2$. Thus the $100ˆ
+                                                  {\text{th}}$ element
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:263: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.263 ...5$, $a_2 = 4$, $a_1 = 2$. Thus the $100ˆ
+                                                  {\text{th}}$ element
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:263: Missing } inserted.
+<inserted text> 
+                }
+l.263 ...$, $a_1 = 2$. Thus the $100ˆ{\text{th}}$
+                                                   element
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--265
+
+ []
+
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 268.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 268.
+
+./C_ES1.tex:268: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.268   so we want the $45ˆ
+                            {\text{th}}$ element of $\binom{[10]}{3}$ in lex...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:268: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.268   so we want the $45ˆ
+                            {\text{th}}$ element of $\binom{[10]}{3}$ in lex...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:268: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.268   so we want the $45ˆ
+                            {\text{th}}$ element of $\binom{[10]}{3}$ in lex...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:268: Missing } inserted.
+<inserted text> 
+                }
+l.268   so we want the $45ˆ{\text{th}}$
+                                         element of $\binom{[10]}{3}$ in lex...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 276.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 276.
+
+./C_ES1.tex:276: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.276 ...and $a_1 = 5$, giving $845$ as the $100ˆ
+                                                  {\text{th}}$ element.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:276: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.276 ...and $a_1 = 5$, giving $845$ as the $100ˆ
+                                                  {\text{th}}$ element.
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:276: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.276 ...and $a_1 = 5$, giving $845$ as the $100ˆ
+                                                  {\text{th}}$ element.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:276: Missing } inserted.
+<inserted text> 
+                }
+l.276 ...$, giving $845$ as the $100ˆ{\text{th}}$
+                                                   element.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 280.
+
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 280.
+
+./C_ES1.tex:280: Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.280   accurate. Is it true that the $nˆ
+                                          {\text{th}}$ number in lex is the ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./C_ES1.tex:280: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.280   accurate. Is it true that the $nˆ
+                                          {\text{th}}$ number in lex is the ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./C_ES1.tex:280: You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.280   accurate. Is it true that the $nˆ
+                                          {\text{th}}$ number in lex is the ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./C_ES1.tex:280: Missing } inserted.
+<inserted text> 
+                }
+l.280 ...ate. Is it true that the $nˆ{\text{th}}$
+                                                   number in lex is the reve...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 285.
+Package mdframed Info: Not enough space on this page on input line 288.
+[5]
+Package mdframed Info: Not enough space on this page on input line 288.
+ [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
  (./C_ES1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
 Package rerunfilecheck Info: File `C_ES1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 47247 strings out of 492616
- 1050480 string characters out of 6129480
- 1195808 words of memory out of 5000000
- 50521 multiletter control sequences out of 15000+600000
+ 47292 strings out of 492616
+ 1051372 string characters out of 6129480
+ 1198041 words of memory out of 5000000
+ 50550 multiletter control sequences out of 15000+600000
  538662 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,119p,824b,1071s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,11n,119p,824b,1047s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1804,10 +2358,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
 019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
 19/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on C_ES1.pdf (5 pages, 186459 bytes).
+Output written on C_ES1.pdf (7 pages, 198462 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

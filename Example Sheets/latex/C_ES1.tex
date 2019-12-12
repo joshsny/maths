@@ -13,61 +13,62 @@
 \usepackage{tkz-graph}
 
 \newcommand{\shadow}{\partial}
-\renewcommand{\P}{\mathbb P}
-
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\F}{\mathcal{F}}
+\renewcommand{\A}{\mathcal{A}}
 \begin{document}
-	\input{titlepage}
+\input{titlepage}
 
-	\subsection*{Introduction}
-	These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
-	\subsection*{Questions}
+\subsection*{Introduction}
+These are written solutions to \ntitle \ Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors, likely due to the author. Solutions may be incomplete and do not usually include starred questions. These are to be used as a reference for revision \textbf{after} examples classes and should never be used beforehand. Doing so will severely impair your ability to learn and study mathematics.
+\subsection*{Questions}
 
-	% Question 1
-	\begin{question}[Question 1]
+% Question 1
+\begin{question}[Question 1]
 	Let $P = (V, <)$ be a finite poset. Recall that a subset $U \subset V$ is a chain if any two elements of $U$ are comparable, and it is an antichain if no two elements of $U$ are comparable. Show that the maximal size of an antichain in $P$ is equal to the minimal number of chains in $P$ that cover $V$.
-	\end{question}
-	\begin{proof}
+\end{question}
+\begin{proof}
 	Let $N_1 = $ maximum size of antichain, $N_2 = $minimum number of chains that cover $V$.
 	\begin{description}
 	\item \underline{$N_2 \geq N_1$} Given $A_1, A_2, ..., A_{N_2}$ minimal number of chains covering $V$. Any antichain $B$ can contain at most one element from each $A_i$ so $N_1 \geq |B| \geq N_2$.
 	\item \underline{$N_1 \geq N_2$} We prove this by induction on $n$, the size of the partially ordered set. If $P$ is empty the theorem is vacuously true. Thus, assume $P$ has atleast one element and let $a$ be a maximal element in $P$ which exists since $P$ is finite. By induction, assume $\exists k \ : \ P^{'} := P \ {a}$ can be covered by $k$ disjoint chains $C_1,..,C_k$ and there is an antichain $A_0$ of size atleast $k$. Have $A_0 \cap C_i \not = \emptyset$. Let $x_i$ be the maximal element of $C_i$ belonging to an antichain of length atleast $k$.\\
-	\begin{remark}[Claim] Let $A_0 = \{x_1,x_2,...,x_k\}$, then $A$ is an antichain
-	\begin{proof}[Proof of Claim]\renewcommand{\qedsymbol}{}
-	Let $A_i$ be an antichain of size $k$ that contains $x_i$, fix $i \not = j$
-  arbitrarily. Then $A_i \cup C_j \not = \emptyset$. Suppose $y \in A_i \cup
-  C_j$. Then $y \leq x_j$ since $x_j$ is maximal in $C_j$. Thus $x_i \not \geq
-  x_j$ since $x_i \not \geq y$. Exchanging $i,j$ gives $x_j \not \geq x_i$. ...
-	\end{proof}
-	\end{remark}
-	Now suppose $a \geq x_i$ for some $1 \leq i \leq k$. Then set
-	\[K = \{a\} \cup \{z \in C_i : z \leq x_i\}\]
-	Then by choice of $x_i$, $P \ K$ does not have an antichain of size $k$ and so by induction $P \setminus K$ can be covered by $k-1$ disjoint chains as $A \ {x_i}$ is an antichain of size $k-1$ in $P \setminus K$. Thus $P$ can be covered by $k$ disjoint chains.\\
-	Else, suppose instead that $a \not \geq x_i$ for all $1 \leq i \leq k$. The $A \cup \{a\}$ is an antichain of size $k+1$ in $P$ and $P$ can be covered by $k+1$ chains $\{a\}, C_1, C_2,...,C_k$.
+    \begin{remark}[Claim] Let $A_0 = \{x_1,x_2,...,x_k\}$, then $A$ is an antichain
+      \begin{proof}[Proof of Claim]\renewcommand{\qedsymbol}{}
+        Let $A_i$ be an antichain of size $k$ that contains $x_i$, fix $i \not = j$
+        arbitrarily. Then $A_i \cup C_j \not = \emptyset$. Suppose $y \in A_i \cup
+        C_j$. Then $y \leq x_j$ since $x_j$ is maximal in $C_j$. Thus $x_i \not \geq
+        x_j$ since $x_i \not \geq y$. Exchanging $i,j$ gives $x_j \not \geq x_i$. ...
+      \end{proof}
+    \end{remark}
+    Now suppose $a \geq x_i$ for some $1 \leq i \leq k$. Then set
+    \[K = \{a\} \cup \{z \in C_i : z \leq x_i\}\]
+    Then by choice of $x_i$, $P \ K$ does not have an antichain of size $k$ and so by induction $P \setminus K$ can be covered by $k-1$ disjoint chains as $A \ {x_i}$ is an antichain of size $k-1$ in $P \setminus K$. Thus $P$ can be covered by $k$ disjoint chains.\\
+    Else, suppose instead that $a \not \geq x_i$ for all $1 \leq i \leq k$. The $A \cup \{a\}$ is an antichain of size $k+1$ in $P$ and $P$ can be covered by $k+1$ chains $\{a\}, C_1, C_2,...,C_k$.
 	\end{description}
-	\end{proof}
+\end{proof}
 
-	\begin{remark}
+\begin{remark}
 	This proof is tedious and a very difficult Question 1. The ideas are, however, important and should be understood.
-	\end{remark}
+\end{remark}
 
-	% Question 2
-	\begin{question}[Question 2]
+% Question 2
+\begin{question}[Question 2]
 	Let $(V, <)$ be a finite ranked poset with non-empty level sets $V_0 V_1,....,V_n$. Suppose for $0 < i \leq n$ every $v \in V_i$ dominates exactly $d_i \geq 1$ elements of $V_{i-1}$, for $0 \leq i < n$ every $v \in V_i$ is dominated by exactly $e_i \geq 1$ elements of $V_{i+1}$, and the partial order on $V = \cup_0^n V_i$ is induced by these relations.\\
 	Show that if $U \subset V$ is an antichain then
 	\[\sum_0^n{\frac{|U \cap V_i|}{|V_i|}} \leq 1\]
-	\end{question}
-	\begin{idea}
+\end{question}
+\begin{idea}
 	Count number of chains of maximal length in two ways
-	\end{idea}
-	\begin{proof}
+\end{idea}
+\begin{proof}
 	Must have $|V_i|e_i = |V_{i+1}|d_{i+1}$ for all $0 \leq i < n$. Thus there are $|V_0| e_0 e_1 ... e_{n-1} = d_1 ... d_k |V_k|e_k ... e_{n-1}$ chains of maximal length in $V$.\\
 	For each maximal chain $C$ we have $|C \cap U| \leq 1$ as $U$ is an antichain. Every element in $V_k$ is contained in exactly $(d_k d_{k-1} ... d_1)(e_k ... e_{n-1})$ maximal chains.\\
 	Putting both of these together gives:
 	\[\sum_0^n | U \cap V_k | (d_k ... d_ 1)(e_k ... e_{n-1}) = \# \text{maximal chains} = |V_0|e_0 ... e_{n-1}\]
 	which upon dividing the LHS by the RHS yields the required result.
 
-	\end{proof}
-	\begin{remark}
+\end{proof}
+\begin{remark}
 	Counting arguments like these are popular. The counting itself is not difficult, but knowing what to count often is.
 \end{remark}
 
@@ -104,63 +105,64 @@
   $k$ contains $k$ sets of size $k-1$ and is contained in $k+1$ sets of size
   $k+1$. Thus from Question 2, $|V_k| = {n \choose k}$ and $| U \cap V_k| = f_k$
   and so the result follows.
-  \end{proof}
-  \begin{proof}[Solution 3]
-    \begin{idea}
-      Pick a chain uniformly at random and use probability
-    \end{idea}
+\end{proof}
+\begin{proof}[Solution 3]
+  \begin{idea}
+    Pick a chain uniformly at random and use probability
+  \end{idea}
 
-    Pick a chain uniformly at random in $Q_n$. Take $A \in X^{(r)}$. Then the
-    probability that $C$ coincides with $A$ is
-    \begin{align}
-      &\P(C \ \text{meets} \ A) = \frac{1}{{n \choose r}}\\
-      &\implies \P(C \ \text{meets} \ \mathcal{F}_k) = \frac{f_k}{{n \choose k}}\\
-      &\implies \P(C \ \text{meets} \ \mathcal{F}) = \sum_{k=o}^n \frac{f_k}{{n \choose k}}
-    \end{align}
-    from which the result follows since all probabilities are bounded above by
-    $1$.
-  \end{proof}
-  \begin{remark}
-    The third proof exhibits a useful idea. Picking at random and using
-    probability to prove a result is a popular method in combinatorics and leads
-    to the field known as Probabalistic Combinatorics.
-  \end{remark}
+  Pick a chain uniformly at random in $Q_n$. Take $A \in X^{(r)}$. Then the
+  probability that $C$ coincides with $A$ is
+  \begin{align}
+    &\P(C \ \text{meets} \ A) = \frac{1}{{n \choose r}}\\
+    &\implies \P(C \ \text{meets} \ \mathcal{F}_k) = \frac{f_k}{{n \choose k}}\\
+    &\implies \P(C \ \text{meets} \ \mathcal{F}) = \sum_{k=o}^n \frac{f_k}{{n \choose k}}
+  \end{align}
+  from which the result follows since all probabilities are bounded above by
+  $1$.
+\end{proof}
+\begin{remark}
+  The third proof exhibits a useful idea. Picking at random and using
+  probability to prove a result is a popular method in combinatorics and leads
+  to the field known as Probabalistic Combinatorics.
+\end{remark}
 
-  % Question 4
-  \begin{question}[Question 4]
-    Let $2 \leq 2r < n$ and let $\mathcal{F} = \mathcal{F}_r \cup
-    \mathcal{F_{n-r}} \subset \P(n)$ be a Sperner family where $\mathcal{F}_r
-    \subset X^{(r)}$, $\mathcal{F}_{n-r} \subset X^{(n-r)}$ and
-    $|\mathcal{F}_r| = |\mathcal{F}_{n-r}| = m$. At most how large is $m$?
-  \end{question}
-  \begin{proof}
-    \begin{idea}
-      Use the fact that $\shadow^{n-2r}{\mathcal{F}_{n-r}}$ and $\mathcal{F}_r$
-      are disjoint.
-    \end{idea}
-    We get that $|\shadow^{n-2r}{\mathcal{F}_{n-r}}| + |\mathcal{F}_r| \leq {n
-      \choose r}$
-    \[1 \geq \]
-  \end{proof}
-  \begin{remark}
-    I cannot go from here to get more then $m \leq \frac{1}{2} \binom{n}{r}$
-    which one can achieve directly from the LYM inequality. The reason for this
-    is the only proof I can think of is essentially a proof of LYM for this
-    particular case. See a bubble down Kruskal-Katona proof for help. The answer
-    should be $\binom{n-1}{r-1}$
-  \end{remark}
+% Question 4
+\begin{question}[Question 4]
+  Let $2 \leq 2r < n$ and let $\mathcal{F} = \mathcal{F}_r \cup
+  \mathcal{F_{n-r}} \subset \P(n)$ be a Sperner family where $\mathcal{F}_r
+  \subset X^{(r)}$, $\mathcal{F}_{n-r} \subset X^{(n-r)}$ and
+  $|\mathcal{F}_r| = |\mathcal{F}_{n-r}| = m$. At most how large is $m$?
+\end{question}
+\begin{proof}
+  \begin{idea}
+    Use the fact that $\shadow^{n-2r}{\mathcal{F}_{n-r}}$ and $\mathcal{F}_r$
+    are disjoint.
+  \end{idea}
+  We get that $|\shadow^{n-2r}{\mathcal{F}_{n-r}}| + |\mathcal{F}_r| \leq {n
+    \choose r}$.
+  Assume that $m = |\mathcal{F}_{r}| > \binom{n-1}{r-1}$. Then we have that
+  \[|\mathcal{F}_{n-r}| > \binom{n-1}{r-1} = \binom{n-1}{n-r} \implies
+    |\shadow^{n-2r}{\mathcal{F}_{n-r}}| > \binom{n-1}{r}\]
+  by repeated application of the LYM inequality. Therefore
+  \[|\shadow^{n-2r}{\mathcal{F}_{n-r}}| + |\mathcal{F}_r| \leq {n
+      \choose r} > \binom{n-1}{r} + \binom{n-1}{r-1} = \binom{n}{r}\]
+  which is a contradiction. This gives an upper bound. The upper bound can be
+  achieved by taking
+  \[\F_r = \{A \in X^{(r)}: 1 \in A\} \ \text{and} \ \F_{n-r} = \{A \in X^{(n-r)}  : 1 \not\in A\} \]
+\end{proof}
 
-  % Question 5
-  \begin{question}[Question 5]
-    For $2 \leq r \leq \frac{n}{2}$, let $A \subset Xˆ{(r)}$ be an intersecting
-    family. (Thus $A \cap B \neq \emptyset$, whenever $A, B \in \mathcal{A}$.)
-    Deduce from the Kruskal-Katona Theorem that $\mathcal{A} \leq
-    \binom{n-1}{r-1}$\\
-    What is the maximal size of an intersecting family $\mathcal{A} \subset
-    \P(X)$? What about in the case $A \subset Xˆ{(\leq r)}$
-  \end{question}
-  
-  \begin{proof}
+% Question 5
+\begin{question}[Question 5]
+  For $2 \leq r \leq \frac{n}{2}$, let $A \subset Xˆ{(r)}$ be an intersecting
+  family. (Thus $A \cap B \neq \emptyset$, whenever $A, B \in \mathcal{A}$.)
+  Deduce from the Kruskal-Katona Theorem that $\mathcal{A} \leq
+  \binom{n-1}{r-1}$\\
+  What is the maximal size of an intersecting family $\mathcal{A} \subset
+  \P(X)$? What about in the case $A \subset Xˆ{(\leq r)}$
+\end{question}
+
+\begin{proof}
   For $A,B \in \mathcal{A}$, have $A \cap B \neq \emptyset$, i.e.\ $A \nsubseteq B^c$.
   Writing
   \begin{equation*}\overline{\mathcal{A}} \coloneqq \{A^c \mid A \in \mathcal{A}\} \subset X^{(n-r)},\end{equation*}
@@ -185,10 +187,111 @@
 
   For $A \subset Xˆ{(\leq r)}$, applying $|A \cap Xˆ{(s)}| \leq \binom{n-1}{s-1}$ for
   all $1 \leq s \leq r$ gives an upper bound of $\sum_{s=1}ˆ{r}
-  \binom{n-1}{s-1}$. This can be achieved with $\mathcal{A} = \{ A : |A| \leq r
+  \binom{n-1}{s-1}$. This can be achieved with $\A = \{ A : |A| \leq r
   \ \text{and} \ 1 \in A\}$ 
 \end{proof}
 \begin{remark}
-  For the first part, the numbers \emph{had} to work as we get equality for $\mathcal{A} = \{A \in X^{(r)} \mid 1 \in A\}$.
+  \begin{itemize}
+  \item For the first part, the numbers \emph{had} to work as we get equality
+    for $\mathcal{A} = \{A \in X^{(r)} \mid 1 \in A\}$.
+  \item This is the same proof as what is used for Question 4, could have just
+    deduced it from that also but I wanted to outline the process again, as this style of question is common.
+  \end{itemize}
 \end{remark}
+
+% Question 6
+\begin{question}[Question 6]
+  Let $\A \subset Xˆ{(r)}$. Prove that for all $1 \leq i,j \leq n$, $i \neq j$
+  \[\shadow{C_{ij}(\A)} \subset C_{ij}(\shadow{\A})\]
+\end{question}
+\begin{remark}
+  A proof of this is in the lecture notes and will not be reproduced here. It is
+  important to understand the proof as compressions are an important concept in
+  the course.
+\end{remark}
+
+% Question 7
+\begin{question}[Question 7]
+  Let $2 \leq 2k < n$, and let $\A \subset [n]ˆ{(k)} \cup [n]ˆ(n-k)$ be a
+  Sperner system. Set $\A_i = \A \cap [n]ˆ(i)$. At most how large is
+  \[\min{|\A_k|, |A_{n-k}|}\]
+\end{question}
+\begin{proof}
+  $\min{|\A_k|, |A_{n-k}|} = \max m$ from Question 4 since we can just remove
+  extra elements from the larger set until they are the same size without
+  affecting the value of $\min{|\A_k|, |A_{n-k}|}$.
+\end{proof}
+
+% Question 8
+\begin{question}[Question 8]
+  Let $X$ be the disjoint union of sets $Y$ and $Z$ with $|Y|$ and $|Z|$ even.
+  What is the maximal cardinality of a set system $\A \subset \P(X)$ if
+  \[A \text{,} B \in \A \text{,} A \neq B \ \text{and} \ A \subset B \implies A
+    \cap Y \neq B \cap Y \ \text{and} \ A \cap Z \neq B \cap Z\]
+\end{question}
+\begin{remark}
+  This question is very difficult and a solution was not presented during the
+  examples class.
+\end{remark}
+
+% Question 9
+\begin{question}[Question 10]
+  Let $U$,$V \subset X$ with $|U| = |V|$, $U \cap V \neq
+  \emptyset$ and $\max U < \max V$. Suppose that $\A$ is $U'V'$-compressed for
+  all $|U'| = |V'| < |U| = |V|$ with $\max U' < \max V'$.\\
+  Show that $\shadow{C_{UV}(\A)} \subset C_{UV}(\shadow{\A})$.
+\end{question}
+\begin{remark}
+  This was proved in lectures and the proof will not be reiterated here. It is
+  similar to the proof of the proposition in Question 6.
+\end{remark}
+
+% Question 10
+\begin{question}[Question 10]
+  What is the $100ˆ{\text{th}}$ element of $\mathbb{N}ˆ{(5)}$ in colex order?\\
+
+  What about the $100ˆ{\text{th}}$ element of the cube $Q_{10}$ in the
+  simplicial order?
+\end{question}
+\begin{proof}
+  \begin{idea}
+    Pick the largest digit possible at each step
+  \end{idea}
+  \[99 = \binom{a_5 - 1}{5} + \binom{a_4 - 1}{4} + \binom{a_3 - 1}{3} +
+    \binom{a_2 - 1}{2} + \binom{a_1 - 1}{1}\]
+  Picking the maximal value of $a_i$ in descending order of $i$ gives $a_5 = 9$,
+  $a_4 = 8$, $a_3 = 5$, $a_2 = 4$, $a_1 = 2$. Thus the $100ˆ{\text{th}}$ element
+  is $24589$ which has $99$ elements less than it.\\
+
+
+  For simplicial on $Q_{10}$ we have that $\binom{10}{1} + \binom{10}{2} = 55$
+  so we want the $45ˆ{\text{th}}$ element of $\binom{[10]}{3}$ in lexicographic
+  order.\\
+  We have that $x_1 x_2 x_3 < y_1 y_2 y_3$ if and only if $x_3 <
+  y_3$ or $x_3 = y_3 \land x_2 < x_1$ or $x_3 = y_3 \land x_2 = y_2 \land x_1 <
+  y_1$.\\
+  Thus we must find $a_1 a_2 a_3$ such that
+  \[44 = \binom{a_1 - 1}{3} + \binom{a_2 - 1}{2} + \binom{a_3 - 1}{1}\]
+
+  so $a_1 = 8$, $a_2 = 4$ and $a_1 = 5$, giving $845$ as the $100ˆ{\text{th}}$ element.
+\end{proof}
+\begin{remark}
+  I have no idea if these numbers are in fact correct, but the method should be
+  accurate. Is it true that the $nˆ{\text{th}}$ number in lex is the reverse of
+  the corresponding number in colex?
+\end{remark}
+
+% Question 11
+\begin{question}[Question 11]
+  Let $x, x_1, \dots ,x_n$ be positive real numbers. Show that at most
+  $\binom{n}{\floor{n/2}}$ of the sums $\sum_{i \in A}x_i$ are equal to $x$.
+\end{question}
+\begin{proof}
+  \begin{idea}
+    Motivated by the size of the given bound, let us use Sperner's theorem by making an antichain $\A \subset \P(n)$ such that
+    $A \in \A$ iff $\sum_{i \in \A} x_i = x$
+  \end{idea}
+  Let $\A = \{A : \sum_{i \in \A}x_i = x\}$. Then $\forall A, B \in \A$, $A
+  \subset B \implies A = B$ since the $x_i$ are all positive.
+\end{proof}
 \end{document}
