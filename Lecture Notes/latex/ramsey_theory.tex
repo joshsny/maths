@@ -1284,19 +1284,19 @@ The proof is essentially what we did for van der Waerden theorem. We are going t
 
   The prove this claim, we induct on $r$. If $r = 1$, then picking $n = HJ(m - 1, k)$ works, as a single colour-focused line of length $n$ is just a monochromatic line of length $n - 1$, and $[m - 1]^n \subseteq [m]^n$ naturally.
 
-  Now suppose $r > 1$ and $n$ works for $r - 1$. Then we will show that $n + n'$ works, where
+  Now suppose $r > 1$ and $n$ works for $r - 1$. Then we will show that $n + \alpha$ works, where
   \[
-    n' = HJ(m - 1, k^{m^n}).
+    \alpha = HJ(m - 1, kˆmˆn )
   \]
-  Consider a colouring $c: [m]^{n + n'} \to [k]$, and we assume this has no monochromatic lines.
+  Consider a colouring $c: [m]^{n +\alpha} \to [k]$, and we assume this has no monochromatic lines.
 
-  We think of $[m]^{n + n'}$ as $[m]^n \times [m]^{n'}$. So for each point in $[m]^{n'}$, we have a whole cube $[m]^n$. Consider a $k^{m^n}$ colouring of $[m]^{n'}$ as follows --- given any $x \in [m]^{n'}$, we look at the subset of $[m]^{n + n'}$ containing the points with last $n'$ coordinates $x$. Then we define the new colouring of $[m]^{n'}$ to be the restriction of $c$ to this $[m]^n$, and there are $m^n$ possibilities.
+  We think of $[m]^{n + \alpha}$ as $[m]^{n} \times [m]^{\alpha}$. So for each point in $[m]^{\alpha}$, we have a whole cube $[m]^{n}$. Consider a $k^{m^{n}$ colouring of $[m]^{\alpha}$ as follows --- given any $x \in [m]^{\alpha}$, we look at the subset of $[m]^{n + \alpha}$ containing the points with last $\alpha$ coordinates $x$. Then we define the new colouring of $[m]^{\alpha}$ to be the restriction of $c$ to this $[m]^{n}$, and there are $m^{n}$ possibilities.
 
-  Now there exists a line $L$ such that $L \setminus L^+$ is monochromatic for the new colouring. This means for all $a \in [m]^n$ and for all $b, b' \in L\setminus L^+$, we have
+  Now there exists a line $L$ such that $L \setminus L^+$ is monochromatic for the new colouring. This means for all $a \in [m]^{n}$ and for all $b, b' \in L\setminus L^+$, we have
   \[
     c(a, b) = c(a, b').
   \]
-  Let $c''(a)$ denote this common colour for all $a \in [m]^n$. this is a $k$-colouring of $[m]^n$ with no monochromatic line (because $c$ doesn't have any). So by definition of $n$, there exists lines $L_1, L_2, \cdots, L_{r - 1}$ in $[m]^n$ which are colour-focused at some $f \in [m]^n$ for $c''$.
+  Let $c''(a)$ denote this common colour for all $a \in [m]^{n}$. this is a $k$-colouring of $[m]^{n}$ with no monochromatic line (because $c$ doesn't have any). So by definition of $\alpha$, there exists lines $L_1, L_2, \cdots, L_{r - 1}$ in $[m]^{n}$ which are colour-focused at some $f \in [m]^{n}$ for $c''$.
 
   In the proof of van der Waerden, we had a progression within each block, and also how we just between blocks. Here we have the same thing. We have the lines in $[m]^n$, and also the ``external'' line $L$.
   \begin{center}
@@ -1325,7 +1325,7 @@ The proof is essentially what we did for van der Waerden theorem. We are going t
       \draw (5, 2) edge [bend left] (8, 2);
     \end{tikzpicture}
   \end{center}
-  Consider the line $L_1', L_2', \cdots, L_{r - 1}'$ in $[m]^{n + n'}$, where
+  Consider the line $L_1', L_2', \cdots, L_{r - 1}'$ in $[m]^{n' + n}$, where
   \[
     (L_i')^- = (L_i^-, L^-),
   \]

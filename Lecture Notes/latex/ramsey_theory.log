@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  28 NOV 2019 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  11 DEC 2019 14:29
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **ramsey_theory.tex
 (./ramsey_theory.tex
@@ -1748,8 +1749,114 @@ ur-ing of $[\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 (-20) ]$, have a monochro-matic $
 \OML/cmm/m/it/10 AP []$
  []
 
-[20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
-[35] [36] [37] [38] [39]
+[20] [21] [22]
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 1289
+.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 1289.
+
+./ramsey_theory.tex:1289: Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1289     \alpha = HJ(m - 1, kˆ
+                                 mˆn )
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./ramsey_theory.tex:1289: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.1289     \alpha = HJ(m - 1, kˆ
+                                 mˆn )
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ramsey_theory.tex:1289: You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1289     \alpha = HJ(m - 1, kˆ
+                                 mˆn )
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \textasciicircum invalid in math mode on input line 1289
+.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 1289.
+
+./ramsey_theory.tex:1289: Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1289     \alpha = HJ(m - 1, kˆmˆ
+                                    n )
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./ramsey_theory.tex:1289: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.1289     \alpha = HJ(m - 1, kˆmˆ
+                                    n )
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ramsey_theory.tex:1289: You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1289     \alpha = HJ(m - 1, kˆmˆ
+                                    n )
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./ramsey_theory.tex:1290: Missing } inserted.
+<inserted text> 
+                }
+l.1290   \]
+           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ramsey_theory.tex:1290: Missing } inserted.
+<inserted text> 
+                }
+l.1290   \]
+           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+./ramsey_theory.tex:1293: Missing } inserted.
+<inserted text> 
+                }
+l.1293 ...le cube $[m]^{n}$. Consider a $k^{m^{n}$
+                                                   colouring of $[m]^{\alpha...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
+[38] [39]
 runsystem(makeindex ramsey_theory.idx)...executed safely (allowed).
 
  (./ramsey_theory.ind) [40
@@ -1766,10 +1873,10 @@ Package rerunfilecheck Info: File `ramsey_theory.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2082.
  ) 
 Here is how much of TeX's memory you used:
- 50557 strings out of 492616
- 1119314 string characters out of 6129480
+ 50559 strings out of 492616
+ 1119347 string characters out of 6129480
  1363655 words of memory out of 5000000
- 53468 multiletter control sequences out of 15000+600000
+ 53470 multiletter control sequences out of 15000+600000
  550424 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,96p,3267b,1089s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1794,7 +1901,7 @@ dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ramsey_theory.pdf (40 pages, 405944 bytes).
+Output written on ramsey_theory.pdf (40 pages, 406509 bytes).
 PDF statistics:
  423 PDF objects out of 1000 (max. 8388607)
  340 compressed objects within 4 object streams

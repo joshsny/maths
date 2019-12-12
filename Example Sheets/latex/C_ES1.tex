@@ -33,7 +33,10 @@
 	\item \underline{$N_1 \geq N_2$} We prove this by induction on $n$, the size of the partially ordered set. If $P$ is empty the theorem is vacuously true. Thus, assume $P$ has atleast one element and let $a$ be a maximal element in $P$ which exists since $P$ is finite. By induction, assume $\exists k \ : \ P^{'} := P \ {a}$ can be covered by $k$ disjoint chains $C_1,..,C_k$ and there is an antichain $A_0$ of size atleast $k$. Have $A_0 \cap C_i \not = \emptyset$. Let $x_i$ be the maximal element of $C_i$ belonging to an antichain of length atleast $k$.\\
 	\begin{remark}[Claim] Let $A_0 = \{x_1,x_2,...,x_k\}$, then $A$ is an antichain
 	\begin{proof}[Proof of Claim]\renewcommand{\qedsymbol}{}
-	Let $A_i$ be an antichain of size $k$ that contains $x_i$, fix $i \not = j$ arbitrarily. Then $A_i \cup C_j \not = \emptyset$. Suppose $y \in A_i \cup C_j$. Then $y \leq x_j$ since $x_j$ is maximal in $C_j$. Thus $x_i \not \geq x_j$ since $x_i \not \geq y$. Exchanging $i,j$ gives $x_j \not \geq x_i$.
+	Let $A_i$ be an antichain of size $k$ that contains $x_i$, fix $i \not = j$
+  arbitrarily. Then $A_i \cup C_j \not = \emptyset$. Suppose $y \in A_i \cup
+  C_j$. Then $y \leq x_j$ since $x_j$ is maximal in $C_j$. Thus $x_i \not \geq
+  x_j$ since $x_i \not \geq y$. Exchanging $i,j$ gives $x_j \not \geq x_i$. ...
 	\end{proof}
 	\end{remark}
 	Now suppose $a \geq x_i$ for some $1 \leq i \leq k$. Then set
@@ -66,5 +69,126 @@
 	\end{proof}
 	\begin{remark}
 	Counting arguments like these are popular. The counting itself is not difficult, but knowing what to count often is.
-	\end{remark}
+\end{remark}
+
+% Question 3
+\begin{question}[Question 3]
+  Let $\mathcal{F} \subset \P(n)$ be a Sperner family i.e. let $\mathcal{F}$ be
+  such that $A \not \subset B$ whenever $A, B \in \mathcal{F}$, $A \neq B$. Show
+  that
+  \[\sum_{k=0}^n \frac{f_k}{{n \choose k}} \leq 1\]
+  where $f_k$ is the number of $k$-sets in $\mathcal{F}$.
+\end{question}
+
+\begin{proof}[Solution 1]
+  \begin{idea}
+    Use the Local LYM inequality repeatedly.
+  \end{idea}
+  Let $\mathcal{A} \subset X^{(r)}$, by the Local LYM inequality we have that
+  \[\frac{|\shadow{A}|}{{n \choose r-1}} \geq \frac{|A|}{{n \choose r}} \]
+  i.e that the shadow of a set has higher density then the set itself.\\
+  Let $\mathcal{F}_r = \mathcal{F} \cap X^{(r)}$ so that $|\mathcal{F}_r| = f_r$. Since $|\mathcal{F}_n| / {n \choose n} \leq 1$ we have that
+  \[1 \geq \frac{|\shadow{\mathcal{F}_n} \cup \mathcal{F}_{n-1}|}{{n \choose
+        n-1}} = \frac{|\shadow{\mathcal{F}_n}|}{{n \choose n-1}} +
+    \frac{|\mathcal{F}_{n-1}|}{{n \choose n-1}} \geq \frac{|\shadow{\mathcal{F}_n}|}{{n \choose n}} +
+    \frac{|\mathcal{F}_{n-1}|}{{n \choose n-1}} \]
+  Where the second equality holds since the two sets are disjoint, else the
+  family would not be Sperner. Repeating this gives the desired result.
+\end{proof}
+
+\begin{proof}[Solution 2]
+  \begin{idea}
+    Use the result from Question 2
+  \end{idea}
+  Let $V = \P(n)$ as in Question 2, ranked by inclusion. Then every set of size
+  $k$ contains $k$ sets of size $k-1$ and is contained in $k+1$ sets of size
+  $k+1$. Thus from Question 2, $|V_k| = {n \choose k}$ and $| U \cap V_k| = f_k$
+  and so the result follows.
+  \end{proof}
+  \begin{proof}[Solution 3]
+    \begin{idea}
+      Pick a chain uniformly at random and use probability
+    \end{idea}
+
+    Pick a chain uniformly at random in $Q_n$. Take $A \in X^{(r)}$. Then the
+    probability that $C$ coincides with $A$ is
+    \begin{align}
+      &\P(C \ \text{meets} \ A) = \frac{1}{{n \choose r}}\\
+      &\implies \P(C \ \text{meets} \ \mathcal{F}_k) = \frac{f_k}{{n \choose k}}\\
+      &\implies \P(C \ \text{meets} \ \mathcal{F}) = \sum_{k=o}^n \frac{f_k}{{n \choose k}}
+    \end{align}
+    from which the result follows since all probabilities are bounded above by
+    $1$.
+  \end{proof}
+  \begin{remark}
+    The third proof exhibits a useful idea. Picking at random and using
+    probability to prove a result is a popular method in combinatorics and leads
+    to the field known as Probabalistic Combinatorics.
+  \end{remark}
+
+  % Question 4
+  \begin{question}[Question 4]
+    Let $2 \leq 2r < n$ and let $\mathcal{F} = \mathcal{F}_r \cup
+    \mathcal{F_{n-r}} \subset \P(n)$ be a Sperner family where $\mathcal{F}_r
+    \subset X^{(r)}$, $\mathcal{F}_{n-r} \subset X^{(n-r)}$ and
+    $|\mathcal{F}_r| = |\mathcal{F}_{n-r}| = m$. At most how large is $m$?
+  \end{question}
+  \begin{proof}
+    \begin{idea}
+      Use the fact that $\shadow^{n-2r}{\mathcal{F}_{n-r}}$ and $\mathcal{F}_r$
+      are disjoint.
+    \end{idea}
+    We get that $|\shadow^{n-2r}{\mathcal{F}_{n-r}}| + |\mathcal{F}_r| \leq {n
+      \choose r}$
+    \[1 \geq \]
+  \end{proof}
+  \begin{remark}
+    I cannot go from here to get more then $m \leq \frac{1}{2} \binom{n}{r}$
+    which one can achieve directly from the LYM inequality. The reason for this
+    is the only proof I can think of is essentially a proof of LYM for this
+    particular case. See a bubble down Kruskal-Katona proof for help. The answer
+    should be $\binom{n-1}{r-1}$
+  \end{remark}
+
+  % Question 5
+  \begin{question}[Question 5]
+    For $2 \leq r \leq \frac{n}{2}$, let $A \subset Xˆ{(r)}$ be an intersecting
+    family. (Thus $A \cap B \neq \emptyset$, whenever $A, B \in \mathcal{A}$.)
+    Deduce from the Kruskal-Katona Theorem that $\mathcal{A} \leq
+    \binom{n-1}{r-1}$\\
+    What is the maximal size of an intersecting family $\mathcal{A} \subset
+    \P(X)$? What about in the case $A \subset Xˆ{(\leq r)}$
+  \end{question}
+  
+  \begin{proof}
+  For $A,B \in \mathcal{A}$, have $A \cap B \neq \emptyset$, i.e.\ $A \nsubseteq B^c$.
+  Writing
+  \begin{equation*}\overline{\mathcal{A}} \coloneqq \{A^c \mid A \in \mathcal{A}\} \subset X^{(n-r)},\end{equation*}
+  this says that $\partial^{n-2r}\overline{\mathcal{A}}$ is disjoint from $\mathcal{A}$.
+  Now suppose that $|\mathcal{A}| > \binom{n-1}{r-1}$.
+  Then $|\overline{\mathcal{A}}| > \binom{n-1}{r-1} = \binom{n-1}{n-r}$, so by
+  repeated application of the LYM inequality we have $|\partial^{n-2r} \overline{\mathcal{A}}| \geq \binom{n-1}{r}$.
+  But
+  \begin{equation*}
+    \binom{n-1}{r-1} + \binom{n-1}{r} = \binom{n}{r}
+  \end{equation*}
+  i.e.\
+  \begin{equation*}
+    |\partial^{n-2r} \overline{\mathcal{A}}| + |\mathcal{A}| > |X^{(r)}|.
+  \end{equation*}
+  a contradiction.\\
+
+  For $\mathcal{A} \subset \P(X)$ an upper bound is $2ˆ{n-1}$ since a set and
+  it's complemement cannot both be in a Sperner family. To achieve this maximal
+  bound, we can extend any Sperner family, but a trivial example is $\mathcal{A}
+  = \{ A : 1 \in A\}$.\\
+
+  For $A \subset Xˆ{(\leq r)}$, applying $|A \cap Xˆ{(s)}| \leq \binom{n-1}{s-1}$ for
+  all $1 \leq s \leq r$ gives an upper bound of $\sum_{s=1}ˆ{r}
+  \binom{n-1}{s-1}$. This can be achieved with $\mathcal{A} = \{ A : |A| \leq r
+  \ \text{and} \ 1 \in A\}$ 
+\end{proof}
+\begin{remark}
+  For the first part, the numbers \emph{had} to work as we get equality for $\mathcal{A} = \{A \in X^{(r)} \mid 1 \in A\}$.
+\end{remark}
 \end{document}
