@@ -55,6 +55,9 @@
     "Rado's theorem"
     "$(m, p, c)$-set"
     "Finite sum theorem"
-    "consistency theorem"))
+    "consistency theorem"
+    "Filter"
+    "Ultrafiler"
+    "Principal Ultrafilter"))
  :latex)
 

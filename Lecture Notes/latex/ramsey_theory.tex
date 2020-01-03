@@ -14,6 +14,7 @@
 {\small
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1em}
+\renewcommand{\F}{\mathcal{F}}
 
 What happens when we cut up a mathematical structure into many `pieces' ? How big must the original structure be in order to guarantee that at least one of the pieces has a specific property of interest? These are the kinds of questions at the heart of Ramsey theory. A prototypical result in the area is van der Waerden's theorem, which states that whenever we partition the natural numbers into finitely many classes, there is a class that contains arbitrarily long arithmetic progressions.
 
@@ -2076,7 +2077,61 @@ is monochromatic? The first thought upon hearing this question is probably eithe
 
 Both of these thoughts are wrong. It is true that it is always possible to find these $x_1, x_2, \cdots$, but the proof is hard. This is \emph{Hindman's theorem}.
 
-We will venture into the world of topology to prove this theorem for reasons that only become apparent once we are on our way, so let's begin our journey.
+We will venture into the world of topology to prove this theorem for reasons
+that only become apparent once we are on our way, so let's begin our journey.
 
+\begin{defi}[Filter]\index{Filter}
+  A filter is $\F \subset P(\N)$ such that
+  \begin{itemize}
+    \item[i)] $\emptyset \not\in \F$, $\N \in \F$
+    \item[ii)] $A \in \F$, $B \subset A \implies B \in \F$ \textit{``closed
+        under superset''}
+      \item[iii)] $A, B \in \F \implies A \intersect B \in \F$ \textit{``closed
+          under finite intersections''}
+        
+\end{itemize}
+\end{defi}
+\begin{eg}
+\begin{itemize}
+  \item $\{ A \subset \N : 3 \in A\}$
+  \item $\{ A \subset \N : 3, 4 \in A\}$
+  \item NOT $\{A \in \N : A \text{ is infinite }\}$ since $E \cap
+  O = \emptyset \not\in \F$ where $E = evens$ and $O = odds$
+\item $\{A \subset \N : A^c \text{finite}\}$ \textit{``cofinite filter''}
+  \item $\{A \in \N : E - A \text{finite}\}$
+  \end{itemize}
+\end{eg}
+A stronger notion of filters is needed to define the topological space required,
+for this we define ultrafilters.
+\begin{defi}[Ultrafilter]\index{Ultrafiler}
+  An ultrafilter is a maximal filter, i.e it cannot be extended.
+\end{defi}
+\begin{eg}
+  \begin{itemize}
+    \item[1:] This is an ultrafilter since any set not in $\F$ does not contain
+      $3$, thus it's intersection with $\{3\} \in \F$ is $\emptyset$.
+    \item[2:] Not an ultrafilter since $1$ extends it.
+    \item[4:] Not an ultrafilter since $5$ extends it.
+      \item[5:] Not an u;trafilter since $\{A \subset \N : M - A \text{ finite
+        }\}$ extends it where $M = \{n : 4 | n\}$
+    \end{itemize}
+  \end{eg}
+\begin{defi}[Principal Ultrafilter]\index{Principal Ultrafilter}
+  The principle ultrafilters are $\tilde{n} = \{A \subset \N : n \in A\}$
+\end{defi}
+\begin{prop}
+  A filter $\F$ is an ultrafilter iff $\forall A \subset \N, A \in \F$ or $A^c
+  \in \F$
+\end{prop}
+\begin{proof}
+  \begin{itemize}
+    \item[$(\Leftarrow)$] If $A \in \F$ then cannot add $A^c$ else we have $A
+      \cap A^c = \emptyset$
+      \item[$(\Rightarrow)$] Given $A \not\in \F$: Want $A^c \in \F$. Must have
+        $B \cap A = \emptyset$ for some $B \in \F$ else the filter $\F' = \{C
+        \subset \N : C \supset A \cap B\, \text{ some } B \in F}$ would extend
+      $\F$. Thus $B \subset A^c$, whence $A^c \in \F$
+    \end{itemize}
+    \end{proof}
 \printindex
 \end{document}
