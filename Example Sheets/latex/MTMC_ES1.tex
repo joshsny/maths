@@ -14,55 +14,177 @@
 
 \newcommand{\shadow}{\partial}
 \renewcommand{\P}{\mathbb P}
+\newcommand{\tv}{\text{TV}}
+\newcommand{\tmix}{t_{\text{mix}}}
 
 \begin{document}
-	\input{titlepage}
-	
-	\section{Introduction}
-	These are written solutions to Mixing Times of Markov Chains Example Sheet 1. Solutions are based on those handed out by Samuel Thomas and are not endorsed by the lecturer nor necessarily correct.
-	\section{Questions}
-	
-	% Question 1
-	\begin{question}[Question 1]
+\input{titlepage}
+
+\section{Introduction}
+These are written solutions to Mixing Times of Markov Chains Example Sheet 1. Solutions are based on those handed out by Samuel Thomas and are not endorsed by the lecturer nor necessarily correct.
+\section{Questions}
+
+% Question 1
+\begin{question}[Question 1]
 	Let \(P\) be the transition matrix of a Markov chain with values in \(E\) and let \(\mu\) and \(\nu\) be two
 	probability distributions on \(E .\) Show that
-$$
-\|\mu P-\nu P\|_{\mathrm{TV}} \leq\|\mu-\nu\|_{\mathrm{TV}} \text { . }
-$$
-Deduce that \(d(t)=\max _{x}\left\|P^{t}(x, \cdot)-\pi\right\|_{\mathrm{TV}}\) is decreasing as a function of \(t,\) where \(\pi\) is the invariant
-distribution.
-	\end{question}
-	
-	\begin{proof}
-		Since $P$ is a stochastic matrix, any eigenvalue $\lambda$ of $P$ satisfies $|\lambda| \leq 1$
-	\end{proof}
-	
-	\begin{remark}
-		Equivalently, the number of maximal chains is \(n!\) and the number of them containing a given \(r\)-set is \(r! (n - r)!\), so
-		\[
-		\sum_{r = 0}^n |\mathcal A_r| r! (n - r)! \leq n!
-		\]
-		so this is probability in disguise
-	\end{remark}
-	
-	% Question 13
-	\begin{question}[Question 13]
+  \[ \|\mu P-\nu P\|_{\mathrm{TV}} \leq\|\mu-\nu\|_{\mathrm{TV}} \text { . } \]
+  Deduce that \(d(t)=\max _{x}\left\|P^{t}(x, \cdot)-\pi\right\|_{\mathrm{TV}}\) is decreasing as a function of \(t,\) where \(\pi\) is the invariant
+  distribution.
+\end{question}
+
+\begin{proof}
+  Since $P$ is a stochastic matrix, any eigenvalue $\lambda$ of $P$ satisfies
+  $|\lambda| \leq 1$. To prove this suppose that $Pv = \lambda v$ and let
+  $|v_k| = \max{|v_1|,|v_2|, \dots, |v_n|}$; so $|v_k| > 0$. Then
+  \[|\lambda||v_k| = |\lambda v_k| = |(Pv)_k| = |\sum_1^n P_{k,j}v_j| \leq
+    |v_k|\]
+  since $P$ is stochastic. Therefore $|\lambda| \leq 1$ and so $\norm{P} \leq
+  1$.\\
+  Then we can apply the inequality $\norm{(\mu - \nu)P}_1 \leq \norm{P}_1
+  \norm{\mu - \nu}_1$.\\
+  For the last part, using the fact that $\pi P = P$ gives the result.
+\end{proof}
+
+% Question 2
+\begin{question}[Question 2]
+  Let $\Sigma = \prod_{i=1}^n \Sigma_i$ where $\Sigma_i$ are finite sets. For
+  each $i$, let $\mu_i$ and $\nu_i$ be probability distributions on $\Sigma_i$
+  and set $\mu = \prod_{i=1}^n \mu_i$ and $\nu = \prod_{i=1}^n \nu_i$. Show
+  that
+  \[\norm{\mu - \nu}_\tv} \leq \sum_{i=1}^n \norm{\mu_i - \nu_i}_
+  \tv\]
+\end{question}
+\begin{proof}
+  For each $i = 1, \dots, n$, let $(X_i, Y_i)$ be an optimal coupling of
+  $(\mu_i, \nu_i)$. Let $X \defeq (X_1, \dots, X_n)$ and $Y \defeq (Y_1, \dots ,
+  Y_n)$. Then $(X,Y)$ is a coupling of $(\mu, \nu)$. From this we get that
+  \[\norm{\mu - \nu}_\tv \leq \P(X \neq Y) \leq \sum_1^n \P(X_i \neq Y_i) =
+    \sum_1^n \norm{\mu_i - \nu_i}_\tv\]
+\end{proof}
+
+% Question 3
+\begin{question}
+  Let $X$ and $Y$ be Poisson random variables with parameters $\lambda$ and
+  $\mu$ respectively. Writing $\mathcal{L}(X)$ and $\mathcal{L}(Y)$ for their
+  laws, prove that
+  \[\norm{\mathcal{L}(X) - \mathcal{L}(Y)}_\tv \leq |\lambda - \mu|\]
+\end{question}
+\begin{proof}[Solution 1]
+  Take a coupling of $(X,Y)$ by taking first $Y \sim Poiss(\mu)$ and $Z \sim
+  Poiss(\lambda - \mu)$ independently and setting $X = Y + Z$. Then we have
+  \[\norm{\mathcal{L}(X) - \mathcal{L}(Y)}_\tv \leq \P(X \neq Y) = \P(Z \neq 0) =
+    1 - e^{-(\lambda - \mu)} \leq |\lambda - \mu|\]
+\end{proof}
+\begin{proof}[Solution 2]
+  WLOG $\lambda \geq \mu$.\\
+  \begin{align*}
+    \norm{\mathcal{L}(X) - \mathcal{L}(Y)}_\tv &= \frac{1}{2} \sum_{n \geq 1} \left| \frac{e^{-\lambda}\lambda^n}{n!} - \frac{e^{-\mu}\mu^n}{n!} \right|\\
+                                               &\leq \frac{1}{2} \sum_{n \geq 1} \frac{e^{-\lambda}}{n!}(\lambda^n - \mu^n)\\
+                                               &= \frac{1}{2} ( \lambda - \mu ) \sum_{n \geq 1}\frac{e^{-\lambda}}{n!}(\lambda^{n-1} + \lambda^{n-2}\mu + \dots + \mu^{n-1})\\
+                                               &\leq \frac{1}{2} ( \lambda - \mu ) \sum_{n \geq 1}\frac{e^{-\lambda}}{n!}(n\lambda^{n-1})\\
+                                               &\leq \frac{1}{2}(\lambda - \mu)\left(1 + \sum_{n \geq 1}\frac{e^{-\lambda} \lambda^n}{n!}\right) = \frac{1}{2} \cdot 2 \cdot (\lambda - \mu) = \lambda - \mu
+  \end{align*}
+\end{proof}  
+
+% Question 4
+\begin{question}[Question 4]
+  Let $Y$ be a random variable with values in $\N$ which satisfies
+  \[\P(Y = j) \leq c,\text{ for all } j > 0 \text{ and } \P(Y = j) \text{ is
+      decreasing in } j,\]
+  where $c$ is a positive constant. Let $Z$ be an independent random variable with
+  independent values in $\N$. Prove that
+  \[\norm{\P(X+Y = \cdot) - \P(Y = \cdot)}_\tv \leq c\E[Z]\]
+\end{question}
+\begin{proof}
+  Since the law of $Y$ is decreasing, $\P(Y = j) \geq \P(Y + k = j)$ for all $k,
+  j \geq 0$. Therefore
+  \begin{align*}
+    \norm{\P(Y+k = \cdot) - \P(Y = \cdot )}_\tv &= \sum_{j: \P(Y = j) \geq \P(Y+k
+                                                  = j)}(\P(Y = j) - \P(Y+k = j))\\
+                                                &= \sum_j (\P(Y = j) - \P(Y+k = j)\\
+    &= 1 - \P(Y \geq k) = \P(Y \leq k) \leq ck
+    \end{align*}
+\end{proof}
+\begin{remark}
+  Using this definition of the total variation distance can be very helpful when
+  we know that a probability distribution is monotone past a certain value,
+  which a lot of distributions are.
+\end{remark}
+
+% Question 5
+\begin{question}[Question 5]
+  Let $X$ be a Markov Chain and let $W$ and $V$ be random variables taking
+  values in $\N$ and suppose they are independent of $X$. Prove that
+  \[\norm{\P(X_W = \cdot) - \P(X_V = \cdot)}_\tv \leq \norm{\P(W = \cdot) - \P(V
+      = \cdot)}_\tv\]
+\end{question}
+\begin{proof}
+  Let $(X_W, X_V)$ be the optimal coupling of $\mu = \P (W = \cdot)$ and $\nu =
+  \P( V = \cdot )$. Then we have
+  \[\norm{\P (X_W = \cdot ) - \P ( X_V = \cdot )}_\tv \leq \P (X_W \neq X_V)
+    \leq \P (W \neq V)\]
+\end{proof}
+
+% Question 6
+\begin{question}[Question 6]
+  Let $G = (V, E)$ be a finite connected graph with maximal distance between any
+  two vertices equal to $D$. Suppose that $X$ is a lazy simple random walk on
+  $G$. Prove that for all $\epsilon < \frac{1}{2}$ we have
+  \[\tmix(\epsilon) \geq \frac{D}{2}\]
+\end{question}
+\begin{idea}
+  Consider $\bar{d}$ instead of $d$ for lower bounds.
+\end{idea}
+\begin{proof}
+  If $t \leq \frac{D}{2}$ and $d(x,y) = D$ then $supp(P^t(x, \cdot)) \cap
+  supp(P^t(y, \cdot )) = \emptyset $ i.e they never meet and therefore
+  $\bar{d}(t) = 1$.\\
+  Therefore $d(t) \geq \frac{1}{2}\bar{d}(t) = \frac{1}{2}$ and the result follows.
+\end{proof}
+
+% Question 7
+\begin{question}[Question 7]
+Let $X$ be a Markov chain in $E$ with transition matrix $P$ and invariant
+distribution $\pi$. Let $A \subset E$ be a subset with $\pi(A) \geq
+\frac{1}{8}$. Let $\tau_A = \inf{t \geq 0: X_t \in A}$. Prove that there exists
+a positive constant $c$ such that
+\[\tmix\left( \frac{1}{4} \right) \geq c \max_x \E_x[\tau_A]\]
+\end{question}
+\begin{idea}
+  Haven't hit a set of size $\frac{1}{8}$, so you know you are lying in only
+  $\frac{7}{8}$ and so you cannot be mixed. Take as the distinguishing set the
+  bad $\frac{1}{8}$.
+\end{idea}
+\begin{proof}
+  Let $t = \tmix\left( \frac{1}{16} \right)$ then $d(t) \leq \frac{1}{16}$ and
+  hence for all sets $A$ we have $P^t(x, A) \geq \pi(A) - \frac{1}{16}$.\\
+  Let $A$ be such that $\pi(A) = \frac{1}{8}$, then $P^t(X, A) \geq
+  \frac{1}{16}$.\\
+  Hence $\tau(A) \lessapprox t \cdot Geom \left( \frac{1}{16} \right)$ since
+  $\tau_A \leq \inf{k \geq 0 : X_t \in A} \lessapprox Geom \left( \frac{1}{16}
+  \right)$ from the above.\\
+  Therefore $\E[\tau_A] \lessapprox t$. Using the submultiplicativity of
+  $\bar{d}$ and the inequality $d(t) \leq 2\bar{d}(t)$, the claim is deduced.
+  \end{proof}
+% Question 13
+\begin{question}[Question 13]
 	Let $P$ be a transition matrix of a finite reversible chain with invariant distribution $\pi$. Using the Cauchy-Schwarz inequality or otherwise prove that for all $x,y$ and all $t$
 	\[ \frac{P^{2t}(x, y)}{\pi (y)} \leq \sqrt{\frac{P^{2t}(x,x)}{\pi (x)} \cdot \frac{P^{2t}(y,y)}{\pi (y)}} \ \text{and} \ P^{2t+2}(x,x) \leq P^{2t} (x,x)\]
-	\end{question}
-	\begin{proof}[Solution 1]
+\end{question}
+\begin{proof}[Solution 1]
 	\begin{align*}
-	\left( \frac{P^{2t}(x, y)}{\pi (y)} \right)^2 &= \sum_{z} \frac{P^t(x,z)P^t(z,y)}{\pi(y)}\\
-	&= \sum_{z}\frac{P^t(x,z)P^t(z,y)}{\pi(z)}\\
-	&\leq \left( \sum_{z} \frac{P^{2t}(x,z)}{\pi(z)} \right) \left( \sum_{z} \frac{P^{2t}(y,z)}{\pi(z)} \right)\\
-	&\leq \left( \frac{P^{2t}(x,x)}{\pi(x)} \right) \left( \frac{P^{2t}(y,y)}{\pi(y)} \right)
+    \left( \frac{P^{2t}(x, y)}{\pi (y)} \right)^2 &= \sum_{z} \frac{P^t(x,z)P^t(z,y)}{\pi(y)}\\
+                                                  &= \sum_{z}\frac{P^t(x,z)P^t(z,y)}{\pi(z)}\\
+                                                  &\leq \left( \sum_{z} \frac{P^{2t}(x,z)}{\pi(z)} \right) \left( \sum_{z} \frac{P^{2t}(y,z)}{\pi(z)} \right)\\
+                                                  &\leq \left( \frac{P^{2t}(x,x)}{\pi(x)} \right) \left( \frac{P^{2t}(y,y)}{\pi(y)} \right)
 	\end{align*}
 	which upon taking square roots of both sides completes the proof.\\
 	For the second part since $|\lambda_j| \leq 1$ we have that
 	\begin{align*}
-	\frac{P^{2t}(x,x)}{\pi (x)} &= \sum_{1}^{|\Sigma|} f_{j}^2 (x) \lambda_j^{2t}\\
-	&\geq \sum_{1}^{|\Sigma|} f_{j}^2 (x) \lambda_j^{2t+2}\\
-	&= \frac{P^{2t+2}(x,x)}{\pi (x)}
+    \frac{P^{2t}(x,x)}{\pi (x)} &= \sum_{1}^{|\Sigma|} f_{j}^2 (x) \lambda_j^{2t}\\
+                                &\geq \sum_{1}^{|\Sigma|} f_{j}^2 (x) \lambda_j^{2t+2}\\
+                                &= \frac{P^{2t+2}(x,x)}{\pi (x)}
 	\end{align*}
-	\end{proof}
+\end{proof}
 \end{document}
