@@ -5,4 +5,6 @@
 \contentsline {section}{\numberline {2}Ramsey theory on the integers}{18}{section.2}% 
 \contentsline {section}{\numberline {3}Partition Regularity}{28}{section.3}% 
 \contentsline {section}{\numberline {4}Ultrafilters and Hindman's Theorem}{39}{section.4}% 
-\contentsline {section}{Index}{41}{section*.5}% 
+\contentsline {subsection}{\numberline {4.1}Ultrafilter Quantifiers}{42}{subsection.4.1}% 
+\contentsline {section}{\numberline {5}Infinite Ramsey Theory}{44}{section.5}% 
+\contentsline {section}{Index}{45}{section*.5}% 

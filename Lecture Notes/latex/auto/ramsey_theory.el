@@ -9,6 +9,10 @@
     "article"
     "art10")
    (TeX-add-symbols
+    "Nomega"
+    "Momega"
+    "Nfinite"
+    "Mfinite"
     "npart"
     "nterm"
     "nyear"
@@ -58,6 +62,11 @@
     "consistency theorem"
     "Filter"
     "Ultrafiler"
-    "Principal Ultrafilter"))
+    "Principal Ultrafilter"
+    "$\\beta\\N$"
+    "$\\forall_{\\U}x$"
+    "$+$"
+    "$\\Momega$"
+    "Ramsey"))
  :latex)
 
