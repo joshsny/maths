@@ -12,6 +12,8 @@
     "tkz-graph")
    (TeX-add-symbols
     "shadow"
+    "Nomega"
+    "Momega"
     "npart"
     "ntitle"
     "nsheet"
