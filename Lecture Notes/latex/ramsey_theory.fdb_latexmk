@@ -1,11 +1,11 @@
 # Fdb version 3
-["makeindex ramsey_theory.idx"] 1578501167 "ramsey_theory.idx" "ramsey_theory.ind" "ramsey_theory" 1578504139
-  "ramsey_theory.idx" 1578501990 2536 ed4fa45d2bfe5ff596b427110c96b460 "pdflatex"
+["makeindex ramsey_theory.idx"] 1578560646 "ramsey_theory.idx" "ramsey_theory.ind" "ramsey_theory" 1578560670
+  "ramsey_theory.idx" 1578560650 2697 3b8b51503bd139f12daebff4e4d1d8fe "pdflatex"
   (generated)
   "ramsey_theory.ilg"
   "ramsey_theory.ind"
-["pdflatex"] 1578504139 "ramsey_theory.tex" "ramsey_theory.pdf" "ramsey_theory" 1578504139
-  "/dev/null" 1578504127 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1578560670 "ramsey_theory.tex" "ramsey_theory.pdf" "ramsey_theory" 1578560670
+  "/dev/null" 1578560649 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -332,15 +332,15 @@
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1573753515 4259637 1d5f180e6a9a9162d2940f192b4a6438 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "header_dexter.tex" 1574953681 15349 09f4ff9fff1a884c3f5405f170c3dc03 ""
-  "ramsey_theory.aux" 1578501990 1847 3f77b7bae0b89c33e26c689a99905948 "pdflatex"
-  "ramsey_theory.ind" 1578501990 2498 4c8dbf0ddd4e18d2913f5572f5e91c53 "makeindex ramsey_theory.idx"
-  "ramsey_theory.out" 1578501990 586 44cb4eb1738479f6a9458c9552e41c3f "pdflatex"
-  "ramsey_theory.tex" 1578504135 116966 5247f28ce8f844739560c1ca1ed566bd ""
-  "ramsey_theory.toc" 1578501990 785 0dab6dd7666e71421d29f4bf1ba31f91 "pdflatex"
+  "ramsey_theory.aux" 1578560650 1847 180878c793db3c32e75ad1fdc1cd4951 "pdflatex"
+  "ramsey_theory.ind" 1578560650 2647 9b98922c6809819975da1582cb1a7928 "makeindex ramsey_theory.idx"
+  "ramsey_theory.out" 1578560650 586 44cb4eb1738479f6a9458c9552e41c3f "pdflatex"
+  "ramsey_theory.tex" 1578560668 117915 55925126a3a415a478fd6fb9f7c32637 ""
+  "ramsey_theory.toc" 1578560650 785 eceb199578c2ba3244cd01d6e94c643c "pdflatex"
   (generated)
-  "ramsey_theory.toc"
-  "ramsey_theory.idx"
-  "ramsey_theory.out"
   "ramsey_theory.aux"
-  "ramsey_theory.log"
   "ramsey_theory.pdf"
+  "ramsey_theory.log"
+  "ramsey_theory.idx"
+  "ramsey_theory.toc"
+  "ramsey_theory.out"

@@ -1,5 +1,6 @@
 \begin{theindex}
 
+  \item $(A,M)^{(\omega)}$, \hyperpage{44}
   \item $(m, p, c)$-set, \hyperpage{35}
   \item $+$, \hyperpage{42}
   \item $C_n$, \hyperpage{11}
@@ -12,6 +13,7 @@
   \item $V_n$, \hyperpage{11}
   \item $X^{(r)}$, \hyperpage{5}
   \item $[n]$, \hyperpage{5}
+  \item $\Mfinite$, \hyperpage{44}
   \item $\Momega$, \hyperpage{44}
   \item $\N$, \hyperpage{5}
   \item $\beta\N$, \hyperpage{40}
@@ -21,6 +23,7 @@
 
   \indexspace
 
+  \item Accepts/Rejects, \hyperpage{45}
   \item active coordinates, \hyperpage{21}
 
   \indexspace

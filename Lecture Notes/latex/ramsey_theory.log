@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  8 JAN 2020 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  9 JAN 2020 09:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2095,43 +2095,71 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+./ramsey_theory.tex:2413: LaTeX Error: Environment remarks undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2413   \begin{remarks}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 [44]
+
+./ramsey_theory.tex:2421: LaTeX Error: \begin{proof} on input line 2161 ended b
+y \end{remarks}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2421   \end{remarks}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[45]
 runsystem(makeindex ramsey_theory.idx)...executed safely (allowed).
 
- (./ramsey_theory.ind) [45
+ (./ramsey_theory.ind) [46
 
 ]
 
-./ramsey_theory.tex:2404: LaTeX Error: \begin{proof} on input line 2161 ended b
+./ramsey_theory.tex:2424: LaTeX Error: \begin{proof} on input line 2161 ended b
 y \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2404 \end{document}
+l.2424 \end{document}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2404.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2404.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2424.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2424.
 (./ramsey_theory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2404.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2404.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2424.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2424.
 
 Package rerunfilecheck Info: File `ramsey_theory.out' has not changed.
 (rerunfilecheck)             Checksum: 44CB4EB1738479F6A9458C9552E41C3F;586.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2404.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2424.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 2161 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 50589 strings out of 492616
- 1119580 string characters out of 6129480
+ 50590 strings out of 492616
+ 1119587 string characters out of 6129480
  1363700 words of memory out of 5000000
  53479 multiletter control sequences out of 15000+600000
  550475 words of font info for 152 fonts, out of 8000000 for 9000
@@ -2158,10 +2186,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ramsey_theory.pdf (45 pages, 434745 bytes).
+Output written on ramsey_theory.pdf (46 pages, 436818 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 395 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
  26813 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -67,6 +67,10 @@
     "$\\forall_{\\U}x$"
     "$+$"
     "$\\Momega$"
-    "Ramsey"))
+    "Ramsey"
+    "$\\Mfinite$"
+    "$(A,M)^{(\\omega)}$"
+    "Accepts/Rejects"
+    "Galvin-Prikry"))
  :latex)
 

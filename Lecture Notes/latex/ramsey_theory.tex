@@ -2164,7 +2164,7 @@ We now prove that all filters are housed an ultrafilter.
   chain of filters $(\F_i : i \in I)$ extending $\F_0$ has an upper bound.\\
   As in every Zorn proof ever seen, we let $\F = \union_{i \in I} \F_i$ and
   claim that this is an upper bound. Clearly $\F \supset \F_i$ and $\F \supset
-  \F_0$ so just need to show that $\F$ is a filter:\\
+ \F_0$ so just need to show that $\F$ is a filter:\\
   \begin{itemize}
   \item[i)] $\emptyset \not\in \F$, $\N \in \F$ since $\emptyset \not\in
     \F_i$ for any $i$ and $\N \in \F_i$ for all $i$.
@@ -2388,17 +2388,109 @@ We now prove that all filters are housed an ultrafilter.
     \begin{cases}
       0 \text{ if } L = M \\
       \frac{1}{\min{(L \bigtriangleup M)}} \text{ if } L \neq M
-      \end{cases}
-    \]
-  In words, two sets are close if the first element they disagree on ids large.  
+    \end{cases}
+  \]
+  In words, two sets are close if the first element they disagree on is large.  
   So the basic open sets are $\{M : A \text{ is an initial segment of M}\}$ for
-  each finite $A \subset \N$. This is sometimes called the \textit{$\tau$
-    topology} or the\textit{product
+  each finite $A \subset \N$. This is sometimes called the
+  \textit{$\tau$-topology} or the \textit{product
     topology} or the \textit{usual topology}. Our aim is to show that open sets are Ramsey according to the
   $\tau$-topology.
-  \begin{defi}[$\Mfinite$]
-$\Mfinite = \{A \subset M : A \text{ finite}\}$
-\end{defi}
-    
+  \begin{defi}[$\Mfinite$]\index{$\Mfinite$}
+    $\Mfinite = \{A \subset M : A \text{ finite}\}$
+  \end{defi}
+  \begin{defi}[$(A,M)^{(\omega)}$]\index{$(A,M)^{(\omega)}$}
+    For $M \in \Nomega$, $A \in \Nfinite$, $(A,M)^{(\omega)}$ is defined as
+    \[(A,M)^{(\omega)} = \{L \in \Nomega : A \text{ is initial segment of }L, L
+      \setminus A \in \Momega \}\]
+    In words, this is the set of infinite things starting in $A$ and continuing
+    in $M$.
+  \end{defi}
+  \begin{defi}[Accepts/Rejects]\index{Accepts/Rejects}
+    For $M \in \Nomega$, $A \in \Nfinite$, we say that $M$ \textit{accepts} $A$
+    (into $Y$) if $(A,M)^{(\omega)} \subset Y$. Say that $M$ rejects $A$ if no
+    $L \in \Momega$ accepts $A$ 
+  \end{defi}
+  \begin{remarks}
+    \begin{itemize}
+    \item If $M$ accepts/rejects $A$ then every $L \in \Momega$ also
+      accepts/rejects $A$.
+    \item If $M$ accepts $A$ and $\max A < \min M$, then $M$ accepts $A \cup
+      A'$ for all $A' \in \Nfinite$.
+    \item $M$ need not accept or reject $A$.
+    \end{itemize}
+  \end{remarks}
+
+  \begin{lem}[Galvin-Prikry]\index{Galvin-Prikry}
+    Let $Y \subset \N^{(\omega)}$ be fixed. Then $\exists M \in \N^{( \omega )}$
+    such  that either $M$ accepts $\emptyset$ or $M$ rejects all of it's finite
+    subsets.
+  \end{lem}
+  \begin{proof}
+    We may assume that no $M \in \Nomega$ accepts $\emptyset$. i.e $\N$ rejects
+    $\emptyset$.
+    \begin{idea}
+      We want to construct infinite sets $M_1 \supset M_2 \supset ...$ and
+      points $a_1 < a_2 < ...$ with $a_{n} \in M_n$ $\forall n$ such that
+      $M_n$ rejects all subsets of $\{a_1, \dots, a_{n-1}\}$. Then we are done
+      as $\{a_1, a_2, \dots,\}$ rejects all of it's finite subsets.
+    \end{idea}
+    Let $M_1 = \N$ then $M_1$ rejects $\emptyset$. Inductively, suppose we have
+    chosen $M_1 \supset M_2 \dots \supset M_n$ and $a_1, \dots, a_{n-1}$ such
+    that $a_i \in M_i$ for all $1 \leq i \leq n-1$ and $M_i$ rejects all finite
+    subsets of $(a_1, \dots, a_{i-1})$ for each $1 \leq i \leq n$. Suppose for
+    contradiction that we cannot choose $a_n, M_{n+1}$ suitably.\\
+    Pick $b_1 > a_{n-1}, b_1 \in M_n$. Cannot take $a_n = b_1$, $M_{n+1} = M_n$
+    and so some infinite $N_1 \subset M_n$ accepts some subset of $\{a_1, \dots,
+    a_{n-1}, b_1\}$ - say the subset $E_1 \union \{b_1\}$.\\
+    Pick $b_2 \in \N_1$, $b_2 > b_1$. Cannot take $a_n = b_2$, $M_{n+1} = N_1$,
+    so some infinite $N_2 \subset N_1$ accepts some subset of $(a_!, \dots,
+    a_{n-1}, b_2)$ - say the subset $E_2 \union \{b_2\}$.\\
+    Continuing this we obtain $b1 < b_2 < \dots$ and $M_n \supset N_1 \supset
+    N_2 \supset \dots$ with $b_{k+1} \in N_k$ for all $k$ and the subsets $E_1,
+    E_2, \dots$ of $\{a_1, \dots, a_{n-1}\}$ such that $N_k$ accepts $E_k \union
+    \{b_k\}$. Passing to a subsequence we may assume that all the $E_k$ are the
+    same, say $E_k = E$ for all $k$ and so $\{b_1, b_2, \dots \}$ accepts $E$ -
+    contradicting $M_n$ rejecting $E$.
+  \end{proof}
+
+  The above proof is in the style of waiting until we fail and when we think we
+  have, showing we actually haven't.
+  \begin{thm}
+    Let $Y$ be open. Then $Y$ is Ramsey.
+  \end{thm}
+  \begin{proof}
+    Choose $M$ as given by the Galvin-Prikry Lemma. If $M$ accepts $\emptyset$
+    then we have $\Momega \subset Y$. Thus we may assume that $M$ rejects all of
+    it's finite subsets.\\
+    \underline{Claim:} $\Momega \subset Y^c$\\
+    Suppose not, then some $L \in \Momega$ has $L \in Y$. Since $Y$ is open,
+    there exists an initial segment $A$ of $L$ such that $(A, \N)^{(\omega)}
+    \subset Y$. In particular, $(A, M)^{(\omega)} \subset Y$ i.e $M$ accepts
+    $A$. However $M$ rejects $A$ since it rejects all of it's finite subsets.
+  \end{proof}
+
+  The above proof is a very overkill proof, the second such of this chapter.
+  Note that $Y$ ramsey $\equiv$ $Y^c$ Ramsey so the closed sets are also Ramsey.
+  \subsection{Borel Sets are Ramsey}
+  A stronger topology (more open sets) is the $*-topology$ (also called the
+  Ellen-Tuch/Matthias topology). It's basic open sets are the $(A,
+  M)^{(\omega)}$ for $A,M \in \Nomega$.\\
+  This is the base for a topology: They cover $\Nomega$ since $\Nomega =
+  (\emptyset, \N)^{(\omega)}$ and
+  \[(A, M)^{(\omega)} \wedge (A', M')^{(\omega)} = \emptyset \text{ or } (A \cup
+    A', M \cup M')^{(\omega)}\]
+  \begin{thm}
+    Let $Y \subset \Nomega$. Then $Y$ *-open $\implies$ $Y$ ramsey.
+  \end{thm}
+  \begin{proof}
+    Let $M$ be as given by Galvin-Prikry. If $M$ accepts $\emptyset$ then we
+    have $\Momega \subset Y$ so we may assume $M$ rejects all of it's finite
+    subsets.\\
+    \underline{Claim:} $\Momega \subset Y^c$\\
+    Suppose some $L \in \Momega$ has $L \in Y$. AS $Y$ is *-open, have
+    $(A,L)^{(\omega)} \subset Y$ for some initial segment $A$ of $L$. Thus $L$
+    accepts $A$.
+    \end{proof}
   \printindex
 \end{document}
