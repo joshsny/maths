@@ -2475,7 +2475,7 @@ We now prove that all filters are housed an ultrafilter.
   \subsection{Borel Sets are Ramsey}
   A stronger topology (more open sets) is the $*-topology$ (also called the
   Ellen-Tuch/Matthias topology). It's basic open sets are the $(A,
-  M)^{(\omega)}$ for $A,M \in \Nomega$.\\
+  M)^{(\omega)}$ for $A \in \Nfinite$, $M \in \Nomega$.\\
   This is the base for a topology: They cover $\Nomega$ since $\Nomega =
   (\emptyset, \N)^{(\omega)}$ and
   \[(A, M)^{(\omega)} \wedge (A', M')^{(\omega)} = \emptyset \text{ or } (A \cup
@@ -2498,7 +2498,7 @@ We now prove that all filters are housed an ultrafilter.
   \begin{defi}[Completely Ramsey]\index{Completely Ramsey}
     Say $Y \subset \Nomega$ is completely ramsey if
 
-    \[\forall A \in \Nfinite \ M \in \Nomega \ \exists L \in \Momega \text{ with
+    \[\forall A \in \Nfinite \ \forall M \in \Nomega \ \exists L \in \Momega \text{ with
       } (A,L)^{(\omega)} \subset Y \text{ or } (A,L)^{(\omega)} \subset Y^c\]
   \end{defi}
   Note that completely ramsey is strictly stronger than Ramsey. Indeed, let $Y$

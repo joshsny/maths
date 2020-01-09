@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+
+\def\npart{III}
+
+\def\ntitle{Ramsey Theory}
+\def\nsheet{I}
+
+\def\ndate{\today}
+
+\input{header}
+
+\let\SO\undefined
+\usepackage{tkz-graph}
+
+\newcommand{\shadow}{\partial}
+\renewcommand{\P}{\mathbb P}
+
+\begin{document}
+	\input{titlepage}
+	
+	\subsection*{Introduction}
+	These are written solutions to \ntitle  Example Sheet \nsheet. Solutions are written based on those seen in examples classes and may contain errors from the author.
+	\subsection*{Questions}
+  \begin
+	% Question 7
+  \begin{question}[Question 7]
+    Prove that wehenever the collection of finite non-empty sets of $\N$ is
+    finitely coloured there exist disjoint $F_1, F_2, \dots$ with $\{\bigcup_{i
+      \in I} F_i : \emptyset \neq I \subset \N, I \text{ finite}\}$
+    monochromatic.
+  \end{question}
+  \begin{idea}
+    Use Hindman's Theorem
+  \end{idea}
+  \begin{proof}
+    By repeatedly applying Ramsey we can find infinite
+    sets $M_1 \supset M_2 \supset \dots$ with $M_i^{(i)}$ monochromatic.
+    By Hindman's theorem whenever $\N$ is finitely coloured there exists $x_1, x_2, \dots$ such that $FS(x_1, x_2,
+    \dots)$ is monochromatic with WLOG $x_1 < x_2 < \dots$ (If this is not
+    the case take $y_1 = x_1$, $y_2 = x_2 + x_3$, $\dots$ which has
+    monochromatic finite sums). Then pick an $F_i \in M_{x_i}^{(x_i)}$ for each
+    $i$ and we are done.
+    \end{proof}
+  
+\end{document}

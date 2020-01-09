@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  9 JAN 2020 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  9 JAN 2020 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2235,15 +2235,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 2509.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2509.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2509.
 
-
-
-Package rerunfilecheck Warning: File `ramsey_theory.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ramsey_theory.out':
-(rerunfilecheck)             Before: 44CB4EB1738479F6A9458C9552E41C3F;586
-(rerunfilecheck)             After:  EBE4B7429E5D81EE2664243DE56C06EC;657.
+Package rerunfilecheck Info: File `ramsey_theory.out' has not changed.
+(rerunfilecheck)             Checksum: EBE4B7429E5D81EE2664243DE56C06EC;657.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2509.
  )
 (\end occurred inside a group at level 1)
@@ -2251,10 +2244,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2509.
 ### semi simple group (level 1) entered at line 2161 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 50593 strings out of 492616
- 1119614 string characters out of 6129480
- 1363700 words of memory out of 5000000
- 53480 multiletter control sequences out of 15000+600000
+ 50594 strings out of 492616
+ 1119630 string characters out of 6129480
+ 1363703 words of memory out of 5000000
+ 53481 multiletter control sequences out of 15000+600000
  550475 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,96p,3267b,1089s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2279,10 +2272,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ramsey_theory.pdf (47 pages, 444652 bytes).
+Output written on ramsey_theory.pdf (47 pages, 444719 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
+ 496 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
  95 named destinations out of 1000 (max. 500000)
- 26813 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 26821 words of extra memory for PDF output out of 29859 (max. 10000000)
 
