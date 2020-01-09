@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  9 JAN 2020 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.14)  9 JAN 2020 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2096,13 +2096,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./ramsey_theory.tex:2413: LaTeX Error: Environment remarks undefined.
+./ramsey_theory.tex:2414: LaTeX Error: Environment remarks undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2413   \begin{remarks}
+l.2414   \begin{remarks}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2110,58 +2110,151 @@ or  <return>  to continue without it.
 
 [44]
 
-./ramsey_theory.tex:2421: LaTeX Error: \begin{proof} on input line 2161 ended b
+./ramsey_theory.tex:2422: LaTeX Error: \begin{proof} on input line 2161 ended b
 y \end{remarks}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2421   \end{remarks}
+l.2422   \end{remarks}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+./ramsey_theory.tex:2424: LaTeX Error: Environment lem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2424   \begin{lem}
+                    [Galvin-Prikry]\index{Galvin-Prikry}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ramsey_theory.tex:2428: LaTeX Error: \begin{proof} on input line 2161 ended b
+y \end{lem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2428   \end{lem}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ramsey_theory.tex:2432: LaTeX Error: Environment idea undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2432     \begin{idea}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ramsey_theory.tex:2437: LaTeX Error: \begin{proof} on input line 2429 ended b
+y \end{idea}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2437     \end{idea}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./ramsey_theory.tex:2445: Undefined control sequence.
+l.2445 ...-1}, b_1\}$ - say the subset $E_1 \union
+                                                   \{b_1\}$.\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./ramsey_theory.tex:2448: Undefined control sequence.
+l.2448 ...n-1}, b_2)$ - say the subset $E_2 \union
+                                                   \{b_2\}$.\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./ramsey_theory.tex:2451: Undefined control sequence.
+l.2451 ...}\}$ such that $N_k$ accepts $E_k \union
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [45]
+Underfull \hbox (badness 10000) in paragraph at lines 2496--2498
+
+ []
+
+[46]
 runsystem(makeindex ramsey_theory.idx)...executed safely (allowed).
 
- (./ramsey_theory.ind) [46
+ (./ramsey_theory.ind) [47
 
 ]
 
-./ramsey_theory.tex:2424: LaTeX Error: \begin{proof} on input line 2161 ended b
+./ramsey_theory.tex:2509: LaTeX Error: \begin{proof} on input line 2161 ended b
 y \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2424 \end{document}
+l.2509 \end{document}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2424.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2424.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2509.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2509.
 (./ramsey_theory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2424.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2509.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2509.
 
-Package rerunfilecheck Info: File `ramsey_theory.out' has not changed.
-(rerunfilecheck)             Checksum: 44CB4EB1738479F6A9458C9552E41C3F;586.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2424.
+
+
+Package rerunfilecheck Warning: File `ramsey_theory.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ramsey_theory.out':
+(rerunfilecheck)             Before: 44CB4EB1738479F6A9458C9552E41C3F;586
+(rerunfilecheck)             After:  EBE4B7429E5D81EE2664243DE56C06EC;657.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2509.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 2161 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 50590 strings out of 492616
- 1119587 string characters out of 6129480
+ 50593 strings out of 492616
+ 1119614 string characters out of 6129480
  1363700 words of memory out of 5000000
- 53479 multiletter control sequences out of 15000+600000
+ 53480 multiletter control sequences out of 15000+600000
  550475 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,96p,3267b,1089s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2186,10 +2279,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ramsey_theory.pdf (46 pages, 436818 bytes).
+Output written on ramsey_theory.pdf (47 pages, 444652 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
  26813 words of extra memory for PDF output out of 29859 (max. 10000000)
 

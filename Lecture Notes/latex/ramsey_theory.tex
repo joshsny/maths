@@ -2490,7 +2490,20 @@ We now prove that all filters are housed an ultrafilter.
     \underline{Claim:} $\Momega \subset Y^c$\\
     Suppose some $L \in \Momega$ has $L \in Y$. AS $Y$ is *-open, have
     $(A,L)^{(\omega)} \subset Y$ for some initial segment $A$ of $L$. Thus $L$
-    accepts $A$.
-    \end{proof}
+    accepts $A$. This contradicts the fact that $M$ rejects $A$ since it rejects
+    all of it's finite subsets.
+  \end{proof}
+  Note that the above contradiction, unlike the previous ones, is not
+  overkill.\\
+  \begin{defi}[Completely Ramsey]\index{Completely Ramsey}
+    Say $Y \subset \Nomega$ is completely ramsey if
+
+    \[\forall A \in \Nfinite \ M \in \Nomega \ \exists L \in \Momega \text{ with
+      } (A,L)^{(\omega)} \subset Y \text{ or } (A,L)^{(\omega)} \subset Y^c\]
+  \end{defi}
+  Note that completely ramsey is strictly stronger than Ramsey. Indeed, let $Y$
+  be the non-ramsey set from the first proposition and set $Z = Y \cup
+  \{2,3,\dots\}^{(\omega)}$. Then certainly $Z$ is Ramsey e.g $\{2,3,\dots
+  \}^{(\omega)} \subset Z$ is Ramsey
   \printindex
 \end{document}

@@ -71,6 +71,7 @@
     "$\\Mfinite$"
     "$(A,M)^{(\\omega)}$"
     "Accepts/Rejects"
-    "Galvin-Prikry"))
+    "Galvin-Prikry"
+    "Completely Ramsey"))
  :latex)
 
